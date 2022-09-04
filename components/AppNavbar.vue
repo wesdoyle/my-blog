@@ -4,7 +4,7 @@ const appConfig = useAppConfig()
 
 <template>
   <div class="w-full bg-slate-800">
-    <div class="flex justify-between max-w-prose px-4 py-4 mx-auto sm:px-8">
+    <div class="flex justify-between max-w-3xl px-4 py-8 mx-auto">
       <NuxtLink to="/">
         <h1 class="text-white font-semibold hover:text-yellow-200">
           Wes Doyle

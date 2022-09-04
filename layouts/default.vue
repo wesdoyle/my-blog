@@ -1,7 +1,7 @@
 <template>
-  <div class="py-10 m-auto bg-white sm:px-8 sm:shadow dark:bg-primary-800 sm:rounded">
-    <main class="max-w-2xl px-4 mx-auto prose sm:px-8 prose-gray dark:prose-invert">
-     <slot />
+  <div class="py-10 m-auto bg-white">
+    <main class="max-w-3xl px-4 mx-auto prose sm:px-8 prose-gray">
+      <slot />
     </main>
   </div>
 </template>

@@ -3,29 +3,27 @@ const { data } = await useAsyncData('articles', () => queryContent('articles').s
 </script>
 
 <template>
-  <div class="flex justify-between max-w-prose px-4 py-4 mx-auto sm:px-8">
+  <div class="flex justify-between px-4 py-4 mx-auto max-w-3xl">
     <div class="flex flex-col min-h-screen overflow-hidden">
       <h1 class="font-bold my-8 text-2xl text-slate-600">
         Blog
       </h1>
       <main class="grow mx-auto">
-        <div v-for="article of data" :key="article.title" class="mb-12">
-          <div class="mb-2 pb-2 border-b">
-            <NuxtLink :to="`${article.slug}`">
-              <h2 class="text-lg mr-3 text-sm font-semibold text-blue-500">
-                <NuxtLink :to="article._path">
+        <ContentList v-slot="{ }" path="/reading">
+          <div v-for="article in data" :key="article._path" class="mb-2">
+            <NuxtLayout v-if="article && article.body.children.length" name="listing">
+              <NuxtLink :to="article._path" class="no-underline hover:underline">
+                <h2 class="mr-3 text-lg font-semibold text-blue-500">
                   {{ article.title }}
-                </NuxtLink>
-              </h2>
-            </NuxtLink>
-            <div class="text-sm text-blue-300">
-              {{ new Date(article.date).toDateString() }}
-            </div>
+                </h2>
+              </NuxtLink>
+              <h3 class="mr-3 text-xs text-blue-400 font-normal">
+                {{ new Date(article.date).toDateString() }}
+              </h3>
+              <ContentRenderer :key="article._id" :value="article" :excerpt="true" />
+            </NuxtLayout>
           </div>
-          <div class="text-slate-400 text-sm">
-            {{ article.excerpt.children[0].children[0].value }} ...
-          </div>
-        </div>
+        </ContentList>
       </main>
     </div>
   </div>

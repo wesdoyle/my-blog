@@ -8,6 +8,8 @@ I find it interesting to think about software testing in terms of epistemology.
 We might think of a test suite as a set of knowledge claims about the behavior of our software.
 At the level of end-to-end tests, such knowledge claims may often correspond to user stories.
 
+<!--more-->
+
 For a user story like "As a user, when I delete an document, I can no longer view it among my documents,"
 and a passing end-to-end test named "Given a user deletes an document, that user can no longer view it from their documents view,"
 we would like to say that we know for certain the software meets the stated specification.

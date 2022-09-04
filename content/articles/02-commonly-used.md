@@ -6,6 +6,8 @@ date: 2019-11-28
 
 This is a bookmark-able reference to commonly used commands
 
+<!--more-->
+
 ### scp
 
 ```bash

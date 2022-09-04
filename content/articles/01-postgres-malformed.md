@@ -9,6 +9,8 @@ tags:
 
 Sometimes the trickiest part of an ETL problem is transforming the raw data you have into a useful format. 
 
+<!--more-->
+
 In this post, I'll walk through an interesting data serialization problem, and explore a few Postgres functions that I leveraged. 
 I was recently working on a project involving some data containing malformed JSON (we'll look at the format in a moment) 
 stored in several Postgres database tables as text. I'm not sure how the data was serialized into this format when 

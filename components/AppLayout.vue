@@ -12,5 +12,3 @@ body {
   @apply text-slate-500;
 }
 </style>
-<script>
-</script>

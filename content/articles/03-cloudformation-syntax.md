@@ -6,6 +6,8 @@ date: 2019-12-03
 
 Quick reference for basic CF template syntax, the use of parameters, mappings, resources, and outputs
 
+<!--more-->
+
 ```yaml
 Parameters:
   Ec2Type:
