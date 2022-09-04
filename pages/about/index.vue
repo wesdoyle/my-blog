@@ -5,7 +5,7 @@
         About
       </h1>
       <main class="grow mx-auto text-lg">
-        <img src="public/wes.png" alt="Wes" width="220" class="float-right ml-6 mb-6 rounded">
+        <img src="/wes.png" alt="Wes" width="220" class="float-right ml-6 mb-6 rounded">
         <p class="mb-6">
           Hi, I'm Wes. 👋 It's my middle name.
           I'm currently the Engineering Director at a software development agency called
