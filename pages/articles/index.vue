@@ -11,13 +11,11 @@ const { data } = await useAsyncData('articles', () => queryContent('articles').s
       <main class="grow mx-auto">
         <div v-for="article of data" :key="article.title" class="mb-12">
           <div class="mb-2 pb-2 border-b">
-            <NuxtLink :to="`${article._path}`">
-              <h2 class="text-lg mr-3 text-sm font-semibold text-blue-500">
-                <NuxtLink :to="article._path">
-                  {{ article.title }}
-                </NuxtLink>
-              </h2>
-            </NuxtLink>
+            <h2 class="text-lg mr-3 text-sm font-semibold text-blue-500">
+              <a :href="article._path">
+                {{ article.title }}
+              </a>
+            </h2>
             <div class="text-sm text-blue-300">
               {{ new Date(article.date).toDateString() }}
             </div>

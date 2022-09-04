@@ -5,33 +5,33 @@ const appConfig = useAppConfig()
 <template>
   <div class="w-full bg-slate-800">
     <div class="flex justify-between max-w-3xl px-4 py-8 mx-auto">
-      <NuxtLink to="/">
+      <a href="/">
         <h1 class="text-white font-semibold hover:text-yellow-200">
           Wes Doyle
         </h1>
-      </NuxtLink>
+      </a>
       <div class="text-primary-700">
-        <NuxtLink
-          to="/"
+        <a
+          href="/"
           active-class="border-b-2 border-yellow-200 text-yellow-200"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >
           Blog
-        </NuxtLink>
-        <NuxtLink
-          to="/reading"
+        </a>
+        <a
+          href="/reading"
           active-class="border-b-2 border-yellow-200 text-yellow-200"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >
           Reading List
-        </NuxtLink>
-        <NuxtLink
-          to="/about"
+        </a>
+        <a
+          href="/about"
           active-class="border-b-2 border-yellow-200 text-yellow-200"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >
           About
-        </NuxtLink>
+        </a>
       </div>
 
       <div class="space-x-3 transition text-white">
