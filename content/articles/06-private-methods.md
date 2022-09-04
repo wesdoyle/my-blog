@@ -5,9 +5,11 @@ date: 2020-10-18
 ---
 
 One of the reasons objects are powerful - in the OOP sense - is because we can write
-and reason about them as [anthropomorphic collaborators](https://sandimetz.com/blog/2018/21/what-does-oo-afford).
+and reason about them as anthropomorphic collaborators.*
 I realize that such a characterization of objects is not to everyone's liking, but I'd like to use this notion
 to set the context for the following observations about how private methods are a sign of incomplete design.
+
+<!--more-->
 
 For now, let's assume we're working to maximize our ability to reason about our code using
 an object-oriented approach, using a high-level language, with a focus on principles like message sending, 
@@ -103,7 +105,7 @@ I can think of a few valid reasons, each of which occurs in generally limited ci
 reusable, descriptive name should be applied to an otherwise awkward (often Boolean) operation 
 and has specific use only in the scope of the object where it is used.
 
-- When a collaborator outside of our control exposes public method that is poorly named and can be 
+- When a collaborator outside our control exposes public method that is poorly named and can be 
 wrapped with a more descriptive private method for use in the implementation of our object's public 
 behavior. In this case, the decision to include a private wrapper should be weighed against the cost 
 of wrapping the entire "thing we don't control" in our own class that publicly exposes more useful 
@@ -112,5 +114,7 @@ names and hides the implementation details of the dependency.
 - Using a private constructor for specific cases, like implementing the Singleton, Builder, or Factory Method patterns.
 
 Objects whose functionality we really care about are hidden, waiting to be extracted and named in many of our private methods!
+
+> * [https://sandimetz.com/blog/2018/21/what-does-oo-afford](https://sandimetz.com/blog/2018/21/what-does-oo-afford)
 
 

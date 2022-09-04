@@ -5,7 +5,7 @@
         <div class="pt-10 pb-8 mx-auto mb-8 text-lg border-b max-w-prose">
           <NuxtContent
             class="prose prose-sm sm:prose lg:prose-md xl:prose-md"
-            :document="article"
+            :document="reading"
           />
         </div>
       </article>
@@ -19,8 +19,8 @@ export default {
   components: {
   },
   async asyncData ({ $content, params }) {
-    const article = await $content('reading', params.slug).fetch()
-    return { article }
+    const reading = await $content('reading', params.slug).fetch()
+    return { reading }
   }
 }
 </script>

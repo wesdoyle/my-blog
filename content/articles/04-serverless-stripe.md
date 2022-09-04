@@ -4,14 +4,13 @@ description: "Setting up Stripe Webhooks with AWS Lambda + API Gateway"
 date: 2020-08-20
 ---
 
-## Using Stripe and its Webhooks with AWS
-
 A few weeks ago, I set up a Stripe integration for a
-<a href="https://entryleveleng.com" target="_blank">job board for entry-level 
-engineers</a> I launched.
-
-The project is cloud-native, comprising a combination of API Gateway,
+job board for entry-level engineers I launched. The project is cloud-native, comprising a combination of API Gateway,
 Lambda, and DynamoDB on the back end.
+
+<!--more-->
+
+## Using Stripe and its Webhooks with AWS
 
 From a development perspective, Stripe is a very nice platform. 
 It easy to get things set up on the Stripe side.  

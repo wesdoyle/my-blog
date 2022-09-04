@@ -3,7 +3,7 @@ export default defineAppConfig({
     twitter: '_wes_d',
     github: 'wesdoyle',
     youtube: 'wesdoyle',
-    linkedin: 'wesdoyle',
-    stackoverflow: 'wesdoyle'
+    linkedin: 'wes-doyle',
+    stackoverflow: 'wes-doyle'
   }
 })

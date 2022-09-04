@@ -4,11 +4,13 @@ description: "A quick look at using multiprocessing.Pool"
 date: 2020-09-12
 ---
 
-## A Quick Multiprocessing Example
-
-Much has been written about Python's `GIL` (global interpreter lock), which constrains a Python process to a single 
+Much has been written about Python's GIL (global interpreter lock), which constrains a Python process to a single 
 processor at a time.  At a high level, it's important to remember that if your Python 
 program is I/O bound, use `threading`, and if it's CPU-bound, use `multiprocessing`.
+
+<!--more-->
+
+## A Quick Multiprocessing Example
 
 Python's `multiprocessing` module provides abstractions over managing the execution and 
 communication of multiple Python processes, allowing for (potentially) significant increases

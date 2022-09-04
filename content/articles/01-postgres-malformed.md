@@ -2,6 +2,9 @@
 title: "Malformed Data Parsing in Postgres"
 description: "Wrangling dirty data in PostgreSQL"
 date: 2019-08-19
+tags:
+- postgres
+- data-munging
 ---
 
 Sometimes the trickiest part of an ETL problem is transforming the raw data you have into a useful format. 
