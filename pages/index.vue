@@ -12,11 +12,11 @@ const { data } = await useAsyncData('articles', () => queryContent('articles').s
         <ContentList v-slot="{ }" path="/reading">
           <div v-for="article in data" :key="article._path" class="mb-2">
             <NuxtLayout v-if="article && article.body.children.length" name="listing">
-              <NuxtLink :to="article._path" class="no-underline hover:underline">
+              <a :href="article._path" class="no-underline hover:underline">
                 <h2 class="mr-3 text-lg font-semibold text-blue-500">
                   {{ article.title }}
                 </h2>
-              </NuxtLink>
+              </a>
               <h3 class="mr-3 text-xs text-blue-400 font-normal">
                 {{ new Date(article.date).toDateString() }}
               </h3>
