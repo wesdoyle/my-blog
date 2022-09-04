@@ -10,7 +10,7 @@
           Hi, I'm Wes. 👋 It's my middle name.
           I'm currently the Engineering Director at a software development agency called
           <a
-            href="https://portalmedia.com"
+            href="https://www.portalmedia.com"
             target="_blank"
             class="text-blue-500 underline"
           >
