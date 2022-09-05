@@ -18,7 +18,7 @@
       <p class="my-2">
         These are the tools I use for day-to-day software development and content production.
       </p>
-      <div class="grow mx-auto text-lg grid grid-cols-2 w-full">
+      <div class="grow mx-auto text-lg grid grid-cols-1 w-full sm:grid-cols-2">
         <div class="my-2 p-2">
           <h4 class="font-semibold text-blue-400">
             Workstation
@@ -220,14 +220,14 @@
       <p class="my-2">
         These are the things I interact with to learn, recharge, and find inspiration.
       </p>
-      <div class="grow mx-auto text-lg grid grid-cols-3 w-full">
+      <div class="grow mx-auto text-lg grid grid-cols-1 w-full sm:grid-cols-3">
         <div class="my-2 p-2">
           <h4 class="font-semibold text-blue-400">
             At Work
           </h4>
           <p class="text-slate-400 text-sm">
-            I enjoy working in-person as part of an engineering-focused culture.
-            Remote is OK, too, but it's tough to replace in-person interaction.
+            I enjoy working in person as part of an engineering-focused culture.
+            Remote is OK, too, but it's tough to replace in person interaction.
           </p>
           <ul class="p-0 mb-8 text-sm">
             <li class="flex pl-0 space-x-2 my-2">
@@ -239,14 +239,14 @@
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
-                name="ph:keyboard-duotone"
+                name="ph:graduation-cap-duotone"
                 class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
               />
-              Lunch-and-Learns
+              Lunch and Learns
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
-                name="ph:keyboard-duotone"
+                name="ph:compass-duotone"
                 class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
               />
               1:1's

@@ -7,8 +7,7 @@
       <main class="grow mx-auto text-lg">
         <img src="/wes.png" alt="Wes" width="220" class="float-right ml-6 mb-6 rounded">
         <p class="mb-6">
-          Hi, I'm Wes. 👋 It's my middle name.
-          I'm currently the Engineering Director at a software development agency called
+          Hi, I'm Wes. 👋 I'm a software engineer and the Engineering Director at a software development agency called
           <a
             href="https://www.portalmedia.com"
             target="_blank"
@@ -20,15 +19,16 @@
           I'm a Mechanical Engineer-turned-Software Engineer.
         </p>
         <p class="mb-6">
-          I'm the founder of a project called
+          I'm the founder of
           <a
             href="https://courses.productivedev.com"
             target="_blank"
             class="text-cyan-500 underline"
           >
             Productive Dev
-          </a>
-          that aims to provide the best project-based remote mentorship available. I create content about engineering, DevOps, cloud, and machine learning on
+          </a>,
+          a project that aims to provide immersive software engineering instruction with a focus on evergreen content,
+          and remote mentorship. I also create content about engineering, DevOps, cloud, and machine learning on
           <a
             href="https://youtube.com/c/wesdoyle"
             target="_blank"
