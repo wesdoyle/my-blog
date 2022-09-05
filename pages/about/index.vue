@@ -22,7 +22,7 @@
         <p class="mb-6">
           I'm the founder of a project called
           <a
-            href="https://productivedev.com"
+            href="https://courses.productivedev.com"
             target="_blank"
             class="text-cyan-500 underline"
           >
