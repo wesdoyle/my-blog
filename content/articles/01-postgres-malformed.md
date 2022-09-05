@@ -173,7 +173,7 @@ Another interesting problem in this dataset involved the "Meta" property in the 
  respectively. As part of the pipeline, I needed to extract this data to a table, as well. Again, PostgreSQL JSON support 
  helped make the task relatively easy. First, we define a function to convert the comma separated text values to a proper 
  JSONB array. For this, we can use a combination of the function concat to prepend and append curly braces around the 
- selector, cast the result to a text array type, and pass the result to the builtin function array_to_json. Note that 
+ selector, cast the result to a text array type, and pass the result to the builtin function `array_to_json`. Note that 
  this function is specific to the structure of the data we're importing, which was determined by inspection.
 
 ```sql
