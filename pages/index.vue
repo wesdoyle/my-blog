@@ -9,8 +9,8 @@ const { data } = await useAsyncData('articles', () => queryContent('articles').s
         Blog
       </h1>
       <p class="mb-8">
-        This is my blog. I'm interested mostly in using this space to record thoughts about the experience of being an engineer.
-        Any thoughts expressed in these posts are my own.
+        This is my blog. I'm interested mostly in using this space to record thoughts about the experience of being an engineer,
+        and to log solutions to or explorations of interesting problems. Any thoughts expressed in these posts are my own.
       </p>
       <p class="border-l-8 pl-4 border-slate-200 mb-8 text-slate-400">
         "I see that I am like a wave on the surface of the ocean. I see myself in all the other waves, and I see all the other waves in me. The manifestation or the disappearance of the waves does not lessen the presence of the ocean."
