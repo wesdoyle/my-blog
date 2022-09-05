@@ -13,24 +13,27 @@ const appConfig = useAppConfig()
       <div class="text-primary-700">
         <a
           href="/"
-          active-class="border-b-2 border-yellow-200 text-yellow-200"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >
           Blog
         </a>
         <a
           href="/reading"
-          active-class="border-b-2 border-yellow-200 text-yellow-200"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >
           Reading List
         </a>
         <a
           href="/about"
-          active-class="border-b-2 border-yellow-200 text-yellow-200"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >
           About
+        </a>
+        <a
+          href="/uses"
+          class="mr-6 pointer text-white hover:text-yellow-200"
+        >
+          Uses
         </a>
       </div>
 
