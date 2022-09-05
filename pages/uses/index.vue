@@ -27,16 +27,16 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:apple-logo-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               Computer: MacBook Pro (16-inch, 2021)
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:keyboard-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
-              Keyboard: CODE V3 87-Key + Cherry MX Clear
+              Keys: CODE V3 87-Key + Cherry MX Clear
             </li>
           </ul>
           <h4 class="font-semibold text-red-400">
@@ -49,35 +49,35 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:camera-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-red-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-red-500"
               />
               Camera: Sony a6400
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:camera-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-red-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-red-500"
               />
               Lens: Sony SEL16F28 16mm f/2.8 Wide-Angle
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:microphone-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-red-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-red-500"
               />
               Mic: Shure SM7B
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:record-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-red-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-red-500"
               />
               DAW: Focusrite Scarlett 4i4
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:sun-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-red-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-red-500"
               />
               Lighting: 2X NEEWER 660
             </li>
@@ -92,21 +92,21 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:file-video-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-amber-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-amber-500"
               />
               Video Editing: Adobe Premiere
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:file-audio-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-amber-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-amber-500"
               />
               Audio Editing: Adobe Audition
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:picture-in-picture-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-amber-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-amber-500"
               />
               Thumbnails: Canva
             </li>
@@ -120,56 +120,67 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:note-pencil-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               Editing: tmux + vim
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:terminal-window-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               Terminal Emulator: iTerm2
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:terminal-bold"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               Shell: zsh
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:lightning-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               IDEs: JetBrains
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:cloud-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               Cloud: AWS
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:computer-tower-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               VMs: Debian
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:rainbow-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
-              Themes: PaperColor, OceanicNext, hydrangea
+              Themes:
+              <a href="https://github.com/NLKNguyen/papercolor-theme" target="_blank">PaperColor</a>,
+              <a href="https://github.com/yuttie/hydrangea-vim" target="_blank">hydrangea</a>
+            </li>
+            <li class="flex pl-0 space-x-2 my-2">
+              <Icon
+                name="ph:rainbow-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
+              />
+              Fonts:
+              <a href="https://www.recursive.design/" target="_blank">Recursive Mono</a>,
+              <a href="https://levien.com/type/myfonts/inconsolata.html" target="_blank">Inconsolata</a>
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:lightning-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-indigo-500"
               />
               Hashicorp tools
             </li>
@@ -184,28 +195,49 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:terminal-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-emerald-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
               />
-              Web: .NET, Vue.js, TypeScript, Cypress
+              Web: .NET, Vue.js, TypeScript
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:database-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-emerald-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
               />
-              ML / Data: Python ecosystem, Spark, Airflow, SQL
+              ML: Python ecosystem, Spark
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
-                name="ph:cloud-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-emerald-500"
+                name="ph:database-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
               />
-              Infrastructure: AWS, Terraform, containerd
+              SQL Flavor: PostgreSQL
+            </li>
+            <li class="flex pl-0 space-x-2 my-2">
+              <Icon
+                name="ph:eye-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
+              />
+              Telemetry: ELK, Prometheus, Grafana
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:robot-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-emerald-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
+              />
+              Testing / QA: Cypress, SonarQube
+            </li>
+            <li class="flex pl-0 space-x-2 my-2">
+              <Icon
+                name="ph:cloud-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
+              />
+              Infrastructure: AWS, Terraform, Nomad, Consul, containerd
+            </li>
+            <li class="flex pl-0 space-x-2 my-2">
+              <Icon
+                name="ph:robot-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-emerald-500"
               />
               CI / CD: GitHub Actions
             </li>
@@ -233,28 +265,28 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:apple-logo-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               Demo Days
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:graduation-cap-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               Lunch and Learns
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:compass-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               1:1's
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:tennis-ball-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               The ping pong table
             </li>
@@ -271,7 +303,7 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:tree-evergreen-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               State Parks
             </li>
@@ -279,7 +311,7 @@
         </div>
         <div class="my-2 p-2">
           <h4 class="font-semibold text-blue-400">
-            Reading
+            Content
           </h4>
           <p class="text-slate-400 text-sm">
             There are few luxuries in life as valuable as reading.
@@ -288,21 +320,21 @@
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:book-open-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               O'Reilly Books
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:file-audio-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               Audible
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:monitor-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 mt-1 text-blue-500"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               A Cloud Guru
             </li>
@@ -312,3 +344,10 @@
     </div>
   </div>
 </template>
+
+<style>
+a {
+  @apply text-slate-400;
+  @apply underline;
+}
+</style>
