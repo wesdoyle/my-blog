@@ -4,13 +4,13 @@ const appConfig = useAppConfig()
 
 <template>
   <div class="w-full bg-slate-800">
-    <div class="flex justify-between max-w-3xl px-4 py-8 mx-auto">
+    <div class="flex justify-between max-w-3xl px-2 py-8 mx-auto flex-col sm:flex-row sm:px-0">
       <a href="/">
-        <h1 class="text-white font-semibold hover:text-yellow-200">
+        <h1 class="text-white font-semibold hover:text-yellow-200 p-4 flex text-center">
           Wes Doyle
         </h1>
       </a>
-      <div class="text-primary-700">
+      <div class="text-primary-700 flex justify-between p-4">
         <a
           href="/"
           class="mr-6 pointer text-white hover:text-yellow-200"
@@ -37,7 +37,7 @@ const appConfig = useAppConfig()
         </a>
       </div>
 
-      <div class="space-x-3 transition text-white">
+      <div class="space-x-3 transition text-white flex justify-between my-3 px-4">
         <a
           v-if="appConfig.socials?.linkedin"
           :href="`https://linkedin.com/in/${appConfig.socials?.linkedin}`"
