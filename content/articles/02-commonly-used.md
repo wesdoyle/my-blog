@@ -1,5 +1,5 @@
 ---
-title: "Commonly Used Commands"
+title: "Useful Unix Commands"
 description: "Quick reference for useful commands"
 date: 2019-11-28
 ---
@@ -28,7 +28,7 @@ dd if=/dev/urandom of=target-file bs=1M count=10
 `if` is the input file, `of` is the output file, and `bs` is the block size. 
 `count` is number of blocks to read from `if` and write to `of`.
 
-### split 
+## split 
 
 Splitting files. Use `-d` for numeric suffixes.
 
@@ -37,7 +37,7 @@ split -b 8K <file> <prefix-name>    # split a file into 8kb chunks
 split -n 128 <file>                 # split a file into 128 chunks
 ```
 
-### scp
+## scp
 
 Basic copy syntax. Use `-r` for copying directories recursively.
 
@@ -47,7 +47,7 @@ scp -i path_to_secret.pem remote_username@10.10.0.2:/remote/file.txt /local/dire
 scp user1@host_1.com:/files/file.txt user2@host_2.com:/files
 ```
 
-### ssh
+## ssh
 
 Generate an RSA SSH key:
 
@@ -92,7 +92,7 @@ Host foo
 $ ssh -NfL 9999:localhost:8888 foo
 ```
 
-### psql
+## psql
 
 Common PostgreSQL slash commands
 
