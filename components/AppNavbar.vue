@@ -24,6 +24,12 @@ const appConfig = useAppConfig()
           Reading List
         </a>
         <a
+          href="/videos"
+          class="mr-6 pointer text-white hover:text-yellow-200"
+        >
+          Videos
+        </a>
+        <a
           href="/about"
           class="mr-6 pointer text-white hover:text-yellow-200"
         >

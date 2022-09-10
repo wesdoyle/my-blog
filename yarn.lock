@@ -951,6 +951,11 @@
   "resolved" "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz"
   "version" "2.0.6"
 
+"@types/youtube@^0.0.39":
+  "integrity" "sha512-naVjyTZT/CoNwEQW3+mf9E/x6sgB7QIPbRDtVlPUpHlmuQTk+j6gQBy0T5CRkV8oC0GYQjMgfr3VdueTSVLTjw=="
+  "resolved" "https://registry.npmjs.org/@types/youtube/-/youtube-0.0.39.tgz"
+  "version" "0.0.39"
+
 "@typescript-eslint/eslint-plugin@^5.21.0":
   "integrity" "sha512-RBZZXZlI4XCY4Wzgy64vB+0slT9+yAPQRjj/HSaRwUot33xbDjF1oN9BLwOLTewoOI0jothIltZRe9uJCHf8gg=="
   "resolved" "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.35.1.tgz"
@@ -2052,6 +2057,11 @@
   dependencies:
     "depd" "~2.0.0"
     "keygrip" "~1.1.0"
+
+"core-js@^3.6.5":
+  "integrity" "sha512-sr0FY4lnO1hkQ4gLDr24K0DGnweGO1QwSj5BpfQjpSJPdqWalja4cTps29Y/PJVG/P7FYlPDkH3hO+Tr0CvDgQ=="
+  "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.25.1.tgz"
+  "version" "3.25.1"
 
 "core-util-is@~1.0.0":
   "integrity" "sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ=="
@@ -3318,6 +3328,11 @@
   dependencies:
     "call-bind" "^1.0.2"
     "get-intrinsic" "^1.1.1"
+
+"get-youtube-id@^1.0.1":
+  "integrity" "sha512-5yidLzoLXbtw82a/Wb7LrajkGn29BM6JuLWeHyNfzOGp1weGyW4+7eMz6cP23+etqj27VlOFtq8fFFDMLq/FXQ=="
+  "resolved" "https://registry.npmjs.org/get-youtube-id/-/get-youtube-id-1.0.1.tgz"
+  "version" "1.0.1"
 
 "git-config-path@^2.0.0":
   "integrity" "sha512-qc8h1KIQbJpp+241id3GuAtkdyJ+IK+LIVtkiFTRKRrmddDzs3SI9CvP1QYmWBFvm1I/PWRwj//of8bgAc0ltA=="
@@ -7706,6 +7721,16 @@
     "@vue/runtime-dom" "3.2.37"
     "@vue/server-renderer" "3.2.37"
     "@vue/shared" "3.2.37"
+
+"vue3-youtube@^0.1.9":
+  "integrity" "sha512-DhEbLsXDRHF7Cf5eB8vuoAbK+WiFuOHa65vlHU3XE5xky058ZK5/jAtHGr+JGhW0Xy2bSl8Eezz6/cR8GmNzgw=="
+  "resolved" "https://registry.npmjs.org/vue3-youtube/-/vue3-youtube-0.1.9.tgz"
+  "version" "0.1.9"
+  dependencies:
+    "@types/youtube" "^0.0.39"
+    "core-js" "^3.6.5"
+    "get-youtube-id" "^1.0.1"
+    "vue" "^3.0.0"
 
 "watchpack@^2.4.0":
   "integrity" "sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg=="
