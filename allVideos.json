@@ -2,7 +2,7 @@
   {
     "title": "Use DynamoDB with .NET 6 and CloudFormation",
     "description": "",
-    "url": "https://youtu.be/5o3vh3bdWAA",
+    "id": "5o3vh3bdWAA",
     "tags": [
       "aws", "dotnet", "dynamodb", "devops"
     ]
@@ -10,25 +10,25 @@
   {
     "title": "Deploy Serverless .NET on AWS with CloudFormation",
     "description": "",
-    "url": "https://youtu.be/w3EmMWYZHMY",
+    "id": "w3EmMWYZHMY",
     "tags": ["aws", "dotnet", "serverless"]
   },
   {
     "title": "Password Auth with Stytch (Vue.js + .NET 6)",
     "description": "",
-    "url": "https://youtu.be/Ud6ibLrK6F8",
+    "id": "Ud6ibLrK6F8",
     "tags": ["stytch","auth", "dotnet", "vue.js"]
   },
   {
     "title": "Building User Auth with Crypto Wallets and Stytch",
     "description": "",
-    "url": "https://youtu.be/GRPjhAWkG_o",
+    "id": "GRPjhAWkG_o",
     "tags": ["stytch","auth", "dotnet", "vue.js", "crypto", "metamask", "web3"]
   },
   {
     "title": "Passwordless Auth with Stytch (Vue 3 + .NET 6)",
     "description": "",
-    "url": "https://youtu.be/YpEe8OLMhBE",
+    "id": "YpEe8OLMhBE",
     "tags": ["stytch","auth", "dotnet", "vue.js", "passwordless", "web3"]
   }
 ]

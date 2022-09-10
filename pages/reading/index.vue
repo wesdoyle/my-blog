@@ -3,7 +3,7 @@ const { data } = await useAsyncData('reading', () => queryContent('reading').sor
 </script>
 
 <template>
-  <div class="flex justify-between px-4 py-4 mx-auto max-w-3xl">
+  <div class="flex justify-between px-4 py-4 mx-auto max-w-6xl">
     <div class="flex flex-col min-h-screen overflow-hidden">
       <h1 class="font-bold my-8 text-2xl text-slate-600">
         Reading List

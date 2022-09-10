@@ -1,6 +1,6 @@
 export default interface YouTubeVideoType{
   title: string,
   description: string | undefined | null,
-  url: string,
+  id: string,
   tags: string[]
 }

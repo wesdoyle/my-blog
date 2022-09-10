@@ -20,8 +20,7 @@
     "rehype-figure": "^1.0.1",
     "remark": "^14.0.2",
     "shiki": "^0.11.1",
-    "shiki-themes": "^0.2.7",
-    "vue3-youtube": "^0.1.9"
+    "shiki-themes": "^0.2.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^10.0.0",

@@ -1,16 +1,11 @@
 <template>
-  <div>
-    <div v-for="video in feed" :key="video.url">
-      <div>
-        {{ video.title }}
-      </div>
-      <div v-if="video.tags && video.tags.length">
-        <span v-for="tag in video.tags" :key="tag">
-          {{ tag }}
-        </span>
-      </div>
+  <div class="grid gap-1 grid-cols-1">
+    <div v-for="video in feed" :key="video.id" class="m-4">
       <YouTubeVideo
-        :url="video.url"
+        :video-id="video.id"
+        :title="video.title"
+        :tags="video.tags"
+        :description="video.description"
       />
     </div>
   </div>
