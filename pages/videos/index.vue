@@ -9,7 +9,8 @@
           My content focuses primarily on software engineering,
           cloud architecture, machine learning, and hands-on tutorials.
         </p>
-        <div class="flex text-sm font-mono w-full justify-between my-2">
+
+        <div class="flex text-sm font-mono sm:w-full justify-between my-2">
           <button
             class="p-3 border border-1 bg-slate-800 text-slate-300"
             @click="prevPage"
@@ -19,7 +20,7 @@
           <button
             v-for="pageNumber of pageNumbers"
             :key="pageNumber"
-            class="p-1 text-slate-500"
+            class="p-1 text-slate-500 hidden md:block"
             @click="goToPage(pageNumber)"
           >
             {{ pageNumber }}
@@ -32,9 +33,9 @@
           </button>
         </div>
         <div class="font-mono text-sm mt-4">
-          Page {{ currentPage }} of {{ totalPages }} (Showing videos {{ startVid+1 }} to {{ endVid }} of {{ totalVids }})
+          Page {{ currentPage }} of {{ totalPages }} (Showing {{ startVid+1 }} to {{ endVid }} of {{ totalVids }} videos)
         </div>
-        <hr class="mt-4 mb-2"/>
+        <hr class="mt-4 mb-2">
         <YouTubeFeed :feed="currentFeed" />
       </main>
     </div>
