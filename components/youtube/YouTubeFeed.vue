@@ -1,6 +1,6 @@
 <template>
   <div class="grid gap-1 grid-cols-1">
-    <div v-for="video in feed" :key="video.id" class="m-4">
+    <div v-for="video in feed" :key="video.id" class="my-2">
       <YouTubeVideo
         :video-id="video.id"
         :title="video.title"

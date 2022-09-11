@@ -1,34 +1,1202 @@
 [
   {
     "title": "Use DynamoDB with .NET 6 and CloudFormation",
-    "description": "",
+    "description": "In this video, we set up a DynamoDB table to store temperature data that we can now post and retrieve using a .NET 6 API deployed using AWS CloudFormation.",
     "id": "5o3vh3bdWAA",
-    "tags": [
-      "aws", "dotnet", "dynamodb", "devops"
-    ]
+    "tags": [ "aws", "dotnet", "dynamodb", "devops", "cdk", "cloudformation" ]
   },
   {
     "title": "Deploy Serverless .NET on AWS with CloudFormation",
-    "description": "",
+    "description": "In this video, we create a new .NET Web API project and deploy to AWS Lambda and API Gateway using the AWS CDK with CloudFormation.",
     "id": "w3EmMWYZHMY",
-    "tags": ["aws", "dotnet", "serverless"]
+    "tags": ["aws", "dotnet", "serverless", "lambda", "cdk", "cloudformation"]
   },
   {
     "title": "Password Auth with Stytch (Vue.js + .NET 6)",
-    "description": "",
+    "description": "In this video, we'll use a new Stytch feature - using Passwords for authentication in a full-stack gift shop application using Vue 3 and .NET 6 minimal web API.",
     "id": "Ud6ibLrK6F8",
-    "tags": ["stytch","auth", "dotnet", "vue.js"]
+    "tags": ["stytch", "auth", "dotnet", "vue.js"]
   },
   {
     "title": "Building User Auth with Crypto Wallets and Stytch",
-    "description": "",
+    "description": "In this video, we'll use Stytch to set up passwordless authentication using an Ethereum Wallet (MetaMask) in a full-stack gift shop application using Vue 3 and .NET 6 minimal web API.",
     "id": "GRPjhAWkG_o",
-    "tags": ["stytch","auth", "dotnet", "vue.js", "crypto", "metamask", "web3"]
+    "tags": ["stytch", "auth", "dotnet", "vue.js", "crypto", "web3"]
   },
   {
     "title": "Passwordless Auth with Stytch (Vue 3 + .NET 6)",
-    "description": "",
+    "description": "In this video, we'll use Stytch to set up passwordless authentication in a full-stack gift shop application using Vue 3 and .NET 6 minimal web API.",
     "id": "YpEe8OLMhBE",
-    "tags": ["stytch","auth", "dotnet", "vue.js", "passwordless", "web3"]
+    "tags": ["stytch", "auth", "dotnet", "vue.js"]
+  },
+  {
+    "title": "Microservices with .NET 6 and AWS Tutorial - Part 4",
+    "description": "In this series, we're going to build a microservices architecture using .NET 6, PostgreSQL, Docker, and AWS Fargate.",
+    "id": "wXNDuF4J6Uc",
+    "tags": ["dotnet", "microservices", "docker", "aws", "fargate"]
+  },
+  {
+    "title": "Microservices with .NET 6 and AWS Tutorial - Part 3",
+    "description": "In this series, we're going to build a microservices architecture using .NET 6, PostgreSQL, Docker, and AWS Fargate.",
+    "id": "mCLHw3GTHOo",
+    "tags": ["dotnet", "microservices", "docker", "aws", "fargate"]
+  },
+  {
+    "title": "Microservices with .NET 6 and AWS Tutorial - Part 2",
+    "description": "In this series, we're going to build a microservices architecture using .NET 6, PostgreSQL, Docker, and AWS Fargate.",
+    "id": "4hZ5ujckDXE",
+    "tags": ["dotnet", "microservices", "docker", "aws", "fargate"]
+  },
+  {
+    "title": "Microservices with .NET 6 and AWS Tutorial - Part 1",
+    "description": "In this series, we're going to build a microservices architecture using .NET 6, PostgreSQL, Docker, and AWS Fargate.",
+    "id": "ioa5RolwPKQ",
+    "tags": ["dotnet", "microservices", "docker", "aws", "fargate"]
+  },
+  {
+    "title": "Learn to Code with Python (Full Course)",
+    "description": "In this video, we're going to learn how to code using Python! This video is intended for anyone who is completely new to programming and wants to learn one of the most useful languages in the industry.",
+    "id": "aKdCFX9L_s4",
+    "tags": ["python", "beginner"]
+  },
+  {
+    "title": "Log .NET 6 API to CloudWatch with NLog",
+    "description": "In this video, we're going to look at how to set up NLog in .NET 6 to write logs to Amazon CloudWatch.",
+    "id": "QfGbFzxNF3s",
+    "tags": ["dotnet", "aws", "cloudwatch", "logging", "devops"]
+  },
+  {
+    "title": "Running SonarQube for .NET on AWS",
+    "description": "In this video, we're going to deploy a self-hosted instance of SonarQube to Amazon EC2! This will allow us to easily run static code analysis on .NET 6 projects throughout the year on the channel.",
+    "id": "Lu6aU1aY4oE",
+    "tags": ["dotnet", "sonarqube", "aws", "devops"]
+  },
+  {
+    "title": "Deploy .NET with AWS CodeDeploy",
+    "description": "In this video, we're going to use AWS CodeDeploy to deploy a .NET 6 Web API to EC2! AWS CodeDeploy provides a very simple way to configure and deploy .NET 6 to EC2 from a GitHub repository.",
+    "id": "MxFDZucqYXw",
+    "tags": ["dotnet", "aws", "codedeploy", "devops"]
+  },
+  {
+    "title": "Use Amazon RDS with .NET 6 (Minimal Web API)",
+    "description": "In this video, we're going to set up a PostgreSQL database with Amazon RDS and connect our minimal .NET 6 Web API - looking at how to create and read records from the database using POST and GET HTTP requests.",
+    "id": "6ws0RAtKUvA",
+    "tags": ["dotnet", "aws", "rds", "postgresl"]
+  },
+  {
+    "title": "Deploy Dockerized .NET 6 on AWS with EC2",
+    "description": "In this video, we're going to deploy our Dockerized .NET 6 web API to AWS! We'll create a new VPC, set up subnets in multiple availability zones, and load balance traffic to our web servers using an Application Load Balancer.",
+    "id": "ywj8Xm6sCKk",
+    "tags": ["dotnet", "aws", "ec2", "docker"]
+  },
+  {
+    "title": "Dockerize .NET 6 in 10 Minutes",
+    "description": "In this video, we're going to Dockerize our .NET 6 Web API built with TDD. We'll see how to build a multi-stage Dockerfile step-by-step. By containerizing our web API, it'll be much more convenient to manage the deployment our application to a variety of environments on-prem and in the cloud. We'll also set up a health check endpoint!",
+    "id": "3s-RfwvijpY",
+    "tags": ["dotnet", "docker"]
+  },
+  {
+    "title": "Building a .NET 6 API Using TDD",
+    "description": "In this video, we're going to build a .NET 6 Web API from scratch using test driven development! We'll cover creating a new solution, adding new web and unit test projects to the solution, and writing unit tests. In following videos in this series, we'll launch our application to a highly-available environment in AWS and look at various ways to configure, deploy, and monitor the application.",
+    "id": "ULJ3UEezisw",
+    "tags": ["dotnet", "web api", "tdd", "unit testing"]
+  },
+  {
+    "title": "Abstract Factory Pattern (Gang of Four)",
+    "description": "The Abstract Factory Pattern is one of the Creational Patterns catalogued in the famous Gang of Four Design Patterns: Elements of Reusable Object-Oriented Software book by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.",
+    "id": "ZKZ23kXvZBQ",
+    "tags": ["dotnet", "design patterns"]
+  },
+  {
+    "title": "Singleton Pattern (Gang of Four Design Patterns Series)",
+    "description": "The Singleton Pattern is one of the Creational Patterns catalogued in the famous Gang of Four Design Patterns: Elements of Reusable Object-Oriented Software book by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.",
+    "id": "nC2ITtHGpP4",
+    "tags": ["dotnet", "design patterns"]
+  },
+  {
+    "title": "Builder Pattern (Gang of Four Design Patterns Series)",
+    "description": "The Builder Pattern is one of the Creational Patterns catalogued in the famous Gang of Four Design Patterns: Elements of Reusable Object-Oriented Software book by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.",
+    "id": "_sa2WlAFWQo",
+    "tags": ["dotnet", "design patterns"]
+  },
+  {
+    "title": "Factory Method Design Pattern",
+    "description": "Let’s take a look at the Factory Method design Pattern. The Factory Method Design Pattern is one of the fundamental Creational Patterns catalogued in the famous Gang of Four Design Patterns: Elements of Reusable Object-Oriented Software book by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.",
+    "id": "ryUB-bU3Se8",
+    "tags": ["dotnet", "design patterns"]
+  },
+  {
+    "title": "Design Patterns in C# Explained with Food Series Intro",
+    "description": "In this video I’m kicking off a new series on Design Patterns in C#. We’ll be going through each of the patterns covered in the “Gang of Four” Design Patterns - Elements of Reusable Object-Oriented Software.",
+    "id": "C_6uQwBjsmk",
+    "tags": ["dotnet", "design patterns"]
+  },
+  {
+    "title": "Coding a Chess Engine in Python (Part 8)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "aMMwW7WoMYs",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Coding a Chess Engine in Python (Part 7)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "lYokmpELz4s",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Coding a Chess Engine in Python (Part 6)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "cx64B3JtAxk",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Coding a Chess Engine in Python (Part 5)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "EAALbgjCPrE",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Let's Build: Chess Engine in Python (Part 4)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "VVmv5TOlN5w",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Let's Build: Chess Engine in Python (Part 3)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "HpX1qZhmBHA",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Let's Build: Chess Engine in Python (Part 2)",
+    "description": "In this series, I'm working on building a chess engine from scratch. I'm using Python for a v1, and possibly moving to C# or Rust later.",
+    "id": "E252w2hRNK4",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "Let's Build: Chess Engine",
+    "description": "Building a chess engine from scratch",
+    "id": "1QotIA4_jb4",
+    "tags": ["python", "live stream", "chess"]
+  },
+  {
+    "title": "TDD Full Course (Learn Test Driven Development with Python)",
+    "description": "In this video, we're going to build a complete application from scratch using TDD (test-driven development) with Python with Flask, spaCy, pytest, and Selenium.",
+    "id": "eAPmXQ0dC7Q",
+    "tags": ["python", "tdd", "unit testing"]
+  },
+  {
+    "title": "Deploy .NET Core to AWS Elastic Beanstalk with RDS Database",
+    "description": "By the end of this .NET Core MVC + AWS Elastic Beanstalk + RDS course, you will understand how to deploy .NET Core MVC applications to the cloud with AWS Elastic Beanstalk.",
+    "id": "5Eyjc1l_geY",
+    "tags": ["dotnet", "aws", "elastic beanstalk", "rds", "devops"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 8 - Unit Tests)",
+    "description": "In this series, we're working through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "rEoaIZ7Ipfs",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 7 - Extract Test Project)",
+    "description": "In this section, we extract an xUnit test project and continue the refactor!",
+    "id": "hAuXyI3S9Ns",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 6 - Starting Unit Tests)",
+    "description": "In this series, we're working through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "wrt1SVe00cA",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 5 - Magic Strings)",
+    "description": "In this series, we'll work through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "732DROaJMQc",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 4 - Factory)",
+    "description": "In this series, we'll work through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "G-TeSeAUiU0",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 3)",
+    "description": "In this series, we'll work through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "IQ30SuQ1SJM",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 2)",
+    "description": "In this series, we'll work through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "yXRGoZ2PsEo",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Refactoring Messy to Testable Code in .NET (Part 1)",
+    "description": "In this series, we'll work through refactoring a messy .NET Core MVC web application with a lot of procedural code and no tests.",
+    "id": "uj0RWP3DdUo",
+    "tags": ["dotnet", "refactoring", "unit testing", "oop"]
+  },
+  {
+    "title": "Live Stream Coding | Part 8 Library Project Updates",
+    "description": ".NET Core Hacking",
+    "id": "qJM068zVZw0",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Live Stream Coding | Part 6 Library Project Updates!",
+    "description": "Part 6 - Updating the Library Project to .NET Core 3 and improving the code base!",
+    "id": "4TAMC_iBkA8",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Live Stream Coding | Part 5 Library Project Updates!",
+    "description": "Part 5 - Updating the Library Project to .NET Core 3 and improving the code base!",
+    "id": "qD9DuVm-UJs",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Live Stream Coding | Part 4 Library Project Updates!",
+    "description": "Part 4 - Updating the Library Project to .NET Core 3 and improving the code base!",
+    "id": "4MyWs4tHdFg",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Information Retrieval | Part 3 - Inverted Index",
+    "description": "An introduction to the Inverted Index data structure used for full-text search.",
+    "id": "1g00SP56iSE",
+    "tags": ["information retrieval", "python", "dotnet", "search", "indexing"]
+  },
+  {
+    "title": "Information Retrieval | Part 2 - Term Document Matrix",
+    "description": "An introduction to the concept of a Term Document Matrix - benefits and tradeoffs.",
+    "id": "n_nOWTSPpy4",
+    "tags": ["information retrieval", "python", "dotnet", "search", "indexing"]
+  },
+  {
+    "title": "Information Retrieval | Part 1",
+    "description": "In this series, we're going to explore the concept of Information Retrieval.",
+    "id": "78nJvQytiYE",
+    "tags": ["information retrieval", "python", "dotnet", "search"]
+  },
+  {
+    "title": "Live Stream Coding | Part 3 Library Project Updates!",
+    "description": "Part 3 - Updating the Library Project to .NET Core 3 and improving the code base!",
+    "id": "AQhwn2B_JgU",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Live Stream Coding | Part 2 Library Project Updates!",
+    "description": "Part 2 - Updating the Library Project to .NET Core 3 and improving the code base!",
+    "id": "suu2dX5YhgY",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Live Stream Coding | Updating Library Project!",
+    "description": "Part 1 - Updating the Library Project to .NET Core 3 and improving the code base!",
+    "id": "5oDY51N_-uo",
+    "tags": ["dotnet", "live stream", "refactoring", "library project"]
+  },
+  {
+    "title": "Out of Memory! Hackerrank Medium: Queen's Attack II Python",
+    "description": "Learn Python for free at Productive Dev: courses.productivedev.com",
+    "id": "Xe-BrdkinlM",
+    "tags": ["python", "hackerrank", "algorithms"]
+  },
+  {
+    "title": "Hackathon | Blazor Language-Learning App",
+    "description": "Part 2 of Learning Blazor and building a language-learning web app from scratch.",
+    "id": "WPVxXe8CQI4",
+    "tags": ["dotnet", "live stream"]
+  },
+  {
+    "title": "3 Easy Problems in Hackerrank",
+    "description": "Screencast of working hackily through some hackerrank problems.",
+    "id": "FB4icOxPOPk",
+    "tags": ["dotnet", "live stream"]
+  },
+  {
+    "title": "Dealing with Burnout as a Software Developer",
+    "description": "In this video, I explore some of the reasons it's common to experience burnout as a Software Developer and some ways to get back on track!",
+    "id": "7A8lCcd3q8I",
+    "tags": ["burnout", "career", "lifestyle"]
+  },
+  {
+    "title": "Javascript Promises Tutorial with Examples",
+    "description": "In this video, we'll look at how Javascript Promises are used, including an example with node-fetch, using promise chaining, using promise all, and also some common mistakes you may encounter when working with promises in Javascript.",
+    "id": "zu6I2FXakLI",
+    "tags": ["javascript", "promises"]
+  },
+  {
+    "title": "GitHub Forks and Pull Requests | Step by Step",
+    "description": "In this video, we'll look at how to contribute to open source projects on GitHub using forks and pull requests.",
+    "id": "a_FLqX3vGR4",
+    "tags": ["git", "github"]
+  },
+  {
+    "title": "Learn Git and GitHub Tutorial | Step by Step",
+    "description": "In this video, I'll cover step-by-step how you can use git for version control for any of your development projects.",
+    "id": "KA3lFXZD0uw",
+    "tags": ["git", "github"]
+  },
+  {
+    "title": "Auth by Example with JWT in Vue + Express",
+    "description": "In this video, we'll build a simple web app with authentication and authorization in Vue.js and Express.js, using Auth0 as an auth provider.",
+    "id": "MdDsOp9_mM0",
+    "tags": ["javascript", "vue.js", "node", "express", "jwt"]
+  },
+  {
+    "title": "Blue / Green Deployment Explained",
+    "description": "What is the blue / green deployment strategy? In this video, we'll cover the basic idea behind the blue green deployment strategy, why it's a useful approach for enabling zero downtime deployments, as well as some pros and cons, including managing database changes and TTL on DNS records.",
+    "id": "h4c6d6qCoO4",
+    "tags": ["devops", "aws", "blue/green"]
+  },
+  {
+    "title": "Github Actions for Continuous Integration (CI)",
+    "description": "In this video, we'll look at setting up a continuous integration loop using Github Actions.",
+    "id": "uv-9tDauS6I",
+    "tags": ["devops", "git", "github", "ci/cd"]
+  },
+  {
+    "title": "Docker and Nginx Reverse Proxy",
+    "description": "In this video, we'll look at a very basic reverse proxy with nginx and docker-compose.",
+    "id": "hxngRDmHTM0",
+    "tags": ["docker", "networking", "nginx"]
+  },
+  {
+    "title": "Easiest Way to Deploy .NET Core MVC to AWS",
+    "description": "AWS Elastic Beanstalk is one of the easiest ways to deploy and manage web applications in the cloud.",
+    "id": "JlJ7PmNIOac",
+    "tags": ["aws", "dotnet", "devops", "elastic beanstalk"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 12",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "723X1_OhPRI",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 11",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "DwcT8wEvyas",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 10",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "pl9OBWAqDBQ",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 09",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "KNfceHrwmvg",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 08",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "8fVl3DFQRTY",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 07",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "HIkQcLcn02s",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 06",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "GlVA9eE604c",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 05",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "Kv5gKWkiKuM",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 04",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "L02D73nMUYw",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 03",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "qjJoZCN6X0I",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Vue, .NET, PostgreSQL - Part 02",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "C9QDkwLEQlU",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "Full-Stack Web Development - Vue, .NET, PostgreSQL",
+    "description": "In this web series, we'll create a complete web application using Vue.js, .NET Core, and PostgreSQL for our stack.",
+    "id": "oCTdY2uektU",
+    "tags": ["dotnet", "full stack", "postgresql", "vue.js", "javascript"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 40 | Setting Up Tests",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "t0XUm685_vs",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 39 | Authorization",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "hOwK3mCmF5w",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 38 | Finalizing Features",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "szzuHK5aqPQ",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 41 | Azure SQL",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "NBPheYDAytA",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 42 | Deploying to Azure",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "DdZn14k_iWU",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 36 | User Index",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "dyhmoM_JyXw",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 37 | Styling Improvements",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "9ubiW4MQziA",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 33 | User Ratings",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "qK6YlcVrXuk",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 34 | Create Forums",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "LFtixX7NvBE",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 35 | Create Forums Continued",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "4_FJYCWK5mw",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 30 | Profile Images",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "DM7_f_99u1I",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 32 | Post Replies",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "5fBAf_WGFOw",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 31 | Finishing Post Replies",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "Cq9cgcbiwR8",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 29 | More Azure",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "rx_UCj05enY",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 28 | Azure Blob Storage",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "Q7eilhUEfXA",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 27 | User Profiles",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "kgpr8idT20U",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 26 | User Roles",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "8z3-akBJm1A",
+    "tags": ["dotnet", "mvc", "full stack", "mssql"]
+  },
+  {
+    "title": "New Podcast + .NET Core Projects!",
+    "description": "I'm hard at work on new .NET Core projects this summer to share with you on YouTube. Be sure to let me know in the comments if there are particular features or types of projects you'd like to see!",
+    "id": "qt27lXx5eZc",
+    "tags": ["podcast", "bitwise", "dotnet"]
+  },
+  {
+    "title": "Simple Python and Docker Chat Server | 03",
+    "description": "In this video, we containerize our chat server using Docker!",
+    "id": "FOV9j1zK_uQ",
+    "tags": ["python", "sockets", "docker"]
+  },
+  {
+    "title": "Simple Python and Docker Chat Server | 02",
+    "description": "In this video, we start a simple chat server project using Python and Docker!",
+    "id": "iqmr8PJFP2Q",
+    "tags": ["python", "sockets", "docker"]
+  },
+  {
+    "title": "Simple Python and Docker Chat Server | 01",
+    "description": "In this video, we start a simple chat server project using Python and Docker!",
+    "id": "iXL-akeLTA4",
+    "tags": ["python", "sockets", "docker"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 20 | Pie Charts",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "jcgh-AkKbmA",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 22 | System Health",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "vxlPXivl9qM",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 21 | Line Charts",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "U34Hh_ni6Gg",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 23 | Finishing Up",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "61jWZ01GB_o",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 17 | Starting Pagination",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "uxYREywAM8o",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 19 | Charting Web API Data",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "XCg14f9jyb4",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 18 | Completing Pagination",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "bN2iwQ977Sk",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 16 | Orders Controller",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "yEymMc93Wjo",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 25 | Bug Fixes 🐛",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "frQPLbM92NY",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 23 | Seeding the Database",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end. We’ll implement Azure file storage, SQL, and app deployment.",
+    "id": "MRqSXqqk2Zg",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 24 | User Registration",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "89j6TKPBNYM",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 22 | User Profiles Continued",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "s0HP7vIl0G0",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 21 | User Profiles",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "Pu-ry5d7jPs",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 15 | API Controllers and Postman",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "Jfl423Yraew",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 20 | Global Search",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "_QYEXX4CMUw",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 19 | Search Results View",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "7ZEVLBQMc-g",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 18 | Global Search",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "LgjHnkWrP6U",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 17 | Forum Search",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "pDPDD1pZ8iI",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 16 | Forum Topics Styling",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "swUx-RmehCk",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 14 | Seeding Data",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "KLK5fdRaOHU",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 13 | PostgreSQL Continued!",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular.",
+    "id": "bezPtwlanbE",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 12 | PostgreSQL",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "p7AxV06qPSo",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 11 | .NET Core Web API",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "CSwz1dG-JgY",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 10 | System Health (Continued!)",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "gHMQumR2J5M",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 09 | System Health dashboard",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "-66x5aj0Bhs",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 08 | Latest Orders Table",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "DpB5Ziw1M1Q",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 07 | Doughnut and Line Charts",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "TPLYZriphQA",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 06 | Creating a Bar Chart",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "d7PPp-0paTU",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 05 | Sales Charting Component",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "eShwT4VwO98",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 04 | Routing",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "-xJk82QWVfI",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 15 | Post Index Styling",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "ceUCHkeAulQ",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 03 | Initial Styling",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "Jv7ueqggQ2Y",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core + Angular Dashboard | 02 | Structure and First Component",
+    "description": "In this course, we’ll build a business intelligence Dashboard application from scratch using ASP .NET Core 2.0 MVC with PostgreSQL and Angular. We'll update to the latest versions of these libraries at the end of the course.",
+    "id": "yGBV2qvZnMM",
+    "tags": ["dotnet", "mvc", "full stack", "postgresql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 14 | CSS and Static Files",
+    "description": "In this episode, we finally get to work adding some style to our forum app!",
+    "id": "IZs03f6XJgY",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 13 | Post Service Search",
+    "description": "In this episode, we work on building in some rudimentary search capabilities to our Post Service!",
+    "id": "gRaX1LBg1uk",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 12 | Home Index View",
+    "description": "In this episode, we work on the Home Index View -- the app is starting to come together!",
+    "id": "uWmJyfiETOk",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 11 | Home Controller",
+    "description": "In this episode, we get to work on the Home Controller so that we can start setting up the front page of the application.",
+    "id": "yq0sFoA291Y",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "Python OpenCV + FPGA Teaser",
+    "description": "Coming March 2019",
+    "id": "lc4id0oEG3U",
+    "tags": ["python", "opencv", "fgpga"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 10 | New Post Form",
+    "description": "In this episode, we continue the creation of new Posts!",
+    "id": "Tr6O-newwlE",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "NEW SERIES | ASP.NET Core + Angular Dashboard | 01 | Intro",
+    "description": "This episode kicks off the ASP.NET Core + Angular Dashboard series! This is the first episode of the series.",
+    "id": "TA5ty7pEo5k",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 09 | Creating New Posts",
+    "description": "In this episode, we work on Creating New Posts!",
+    "id": "d5wA3I3wgLM",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 08 | Post Index View",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "wfolLGRHwYA",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 07 | Topic View + Post Controller",
+    "description": "In this episode, we work on Forum Topic View and the Post Controller.",
+    "id": "2FjyOm3WN3g",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 06 | Forum Topics",
+    "description": "In this episode, we work on Forum Topics.",
+    "id": "-2lmxhTFWwE",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 05 | Recap and Forum Index",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "C-oYZV8N7Zs",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 04 | Starting Services",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "idB69s4w49A",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 03 | Creating Models",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "9HNy4ZVG9IQ",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum | 02 | Project Setup",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "eZKSzJhM8xk",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "ASP.NET Core 2 MVC Forum (Part 1)",
+    "description": "In this course, we’ll build a feature-complete Forum application from scratch using ASP .NET Core 2.0 MVC with a Microsoft SQL Server database back end.",
+    "id": "nItgtJwgV4Y",
+    "tags": ["dotnet", "mvc", "full stack", "mssql", "angular"]
+  },
+  {
+    "title": "Live Coding - Sentiment Analysis - Part 7",
+    "description": "In this live stream, I'm work on refining the NLP pipeline and running it against several novels!",
+    "id": "pgWmEm2CNnw",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "Live Coding - Code Coverage - Sentiment Analysis - Part 6",
+    "description": "In this live stream, I'm work on getting code coverage metrics and syncing this project's GitHub repo to codecov!",
+    "id": "IobPTK74OXI",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "Live Coding - Sentiment Analysis TDD - Part 5",
+    "description": "In this live stream, I work on creating a simple sentiment analysis tool using TDD as a development approach.",
+    "id": "wnK9WS0_Mhc",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "Live Coding - Sentiment Analysis TDD - Part 4",
+    "description": "In this live stream, I work on creating a simple sentiment analysis tool using TDD as a development approach.",
+    "id": "Ss5IQ37s8E0",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "Live Coding - Sentiment Analysis TDD - Part 3",
+    "description": "In this live stream, I work on creating a simple sentiment analysis tool using TDD as a development approach.",
+    "id": "xlDjz8IfIds",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "Live Coding - Sentiment Analysis TDD Part 2",
+    "description": "In this live stream, I continue working on a simple sentiment analysis project in Python, taking a TDD approach.",
+    "id": "TgYTd34Bkuw",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "Live Coding - Sentiment Analysis TDD",
+    "description": "In this live stream, I work on creating a simple sentiment analysis tool using TDD",
+    "id": "iJ8xv2OK0Kg",
+    "tags": ["python", "nlp", "sentiment analysis"]
+  },
+  {
+    "title": "ASP.NET Core 2.1 Full Stack Web App - Part 04",
+    "description": "In this video series, we'll be building a full-stack web application from scratch!",
+    "id": "JWlx_zvGXyM",
+    "tags": ["dotnet", "full stack", "mvc"]
+  },
+  {
+    "title": "ASP.NET Core 2.1 Full Stack Web App - Part 03",
+    "description": "In this video series, we'll be building a full-stack web application from scratch!",
+    "id": "Ak0wKKFNG_c",
+    "tags": ["dotnet", "full stack", "mvc"]
+  },
+  {
+    "title": "ASP.NET Core 2.1 Full Stack Web App - Part 02",
+    "description": "In this video series, we'll be building a full-stack web application from scratch!",
+    "id": "54ZhT3ko9VI",
+    "tags": ["dotnet", "full stack", "mvc"]
+  },
+  {
+    "title": "Hackathon Livestream: Python Coding Problems",
+    "description": "Shaking off a bit of rust and warming up with some Python coding challenges! Coding starts at about the 14:30 mark. Timestamps below!",
+    "id": "FBL9WMef7Yg",
+    "tags": ["python", "exercism", "algorithms", "live stream"]
+  },
+  {
+    "title": "ASP.NET Core 2.1 Full Stack Web App - Part 01",
+    "description": "In this video series, we'll be building a full-stack web application from scratch!",
+    "id": "-09ajA4rOKU",
+    "tags": ["dotnet", "full stack", "mvc"]
+  },
+  {
+    "title": "I'm Back! Channel Update + New Projects",
+    "description": "Just wanted to make a quick video to let you all know what I've been up to! Let me know what you'd like to see over the next few months in terms of content - I'm up for anything! Thank you for your support!",
+    "id": "xXrJrWvDQfY",
+    "tags": ["updates"]
+  },
+  {
+    "title": "Ionic Notes App Tutorial - Part 6",
+    "description": "In this series, we'll build a full-featured note taking app using Ionic framework.",
+    "id": "Mg6dSdIEWWk",
+    "tags": ["javascript", "mobile", "ionic", "angular"]
+  },
+  {
+    "title": "Ionic Notes App Tutorial - Part 5",
+    "description": "In this series, we'll build a full-featured note taking app using Ionic framework.",
+    "id": "jrpNDILJNN4",
+    "tags": ["javascript", "mobile", "ionic", "angular"]
+  },
+  {
+    "title": "Ionic Notes App Tutorial - Part 4",
+    "description": "In this series, we'll build a full-featured note taking app using Ionic framework.",
+    "id": "elq-J0JCxGc",
+    "tags": ["javascript", "mobile", "ionic", "angular"]
+  },
+  {
+    "title": "Ionic Notes App Tutorial - Part 3",
+    "description": "In this series, we'll build a full-featured note taking app using Ionic framework.",
+    "id": "77ONK2-h-P8",
+    "tags": ["javascript", "mobile", "ionic", "angular"]
+  },
+  {
+    "title": "Ionic Notes App Tutorial - Part 2",
+    "description": "In this series, we'll build a full-featured note taking app using Ionic framework.",
+    "id": "wdrLqgi7PNU",
+    "tags": ["javascript", "mobile", "ionic", "angular"]
+  },
+  {
+    "title": "Ionic Notes App Tutorial - Part 1",
+    "description": "In this series, we'll build a full-featured note taking app using Ionic framework.",
+    "id": "qa7AYCVY-aA",
+    "tags": ["javascript", "mobile", "ionic", "angular"]
+  },
+  {
+    "title": "JS Spread Syntax by Example",
+    "description": "In this episode of 5 Minute Fridays, we'll look at using the Javascript spread operator in several examples. We'll also look at a quick example of rest parameter syntax.",
+    "id": "1n6GRtWDJvk",
+    "tags": ["javascript"]
+  },
+  {
+    "title": "Javascript Map and Filter by Example",
+    "description": "In this episode of 5 Minute Fridays, we'll look at using the Javascript map and filter methods in several examples.",
+    "id": "YtHHvQ6zlTw",
+    "tags": ["javascript"]
+  },
+  {
+    "title": "ASP.NET Core Web App Tutorial - Part 5",
+    "description": "In this video series, I'll be building a library management system from scratch using the ASP .NET Core framework with MVC.",
+    "id": "WAOJkiFInTU",
+    "tags": ["dotnet", "mvc", "library project"]
+  },
+  {
+    "title": "Javascript Reduce by Example",
+    "description": "Learn how to use reduce in javascript.",
+    "id": "CXxVjQ1VTEo",
+    "tags": ["javascript"]
+  },
+  {
+    "title": ".NET Core 2.0 Gallery App Azure Tutorial - Part 6",
+    "description": "In Part 6 (of 7!) of this series, we'll continue our ASP.NET Core 2.0 MVC gallery project, setting up an Azure storage account and uploading images to a new container.",
+    "id": "TATsTSF5PaE",
+    "tags": ["dotnet", "mvc"]
+  },
+  {
+    "title": "New Angular Dashboard Course + Channel Updates",
+    "description": "I've just released a brand new premium course over at Productive Dev - Angular 4 + .NET Core 2.0 Web API Business Intelligence Dashboard.",
+    "id": "VwmTlH8xIvA",
+    "tags": ["updates", "angular"]
+  },
+  {
+    "title": ".NET Core 2.0 Gallery App Azure Tutorial - Part 5",
+    "description": "In Part 5 of 6 of this series, we'll continue our ASP.NET Core 2.0 MVC gallery project, adding a form to our image gallery that we will use to upload images. In the next video, we'll implement a service to upload images to Azure.",
+    "id": "pfHRBC-zOuU",
+    "tags": ["dotnet", "mvc"]
+  },
+  {
+    "title": "Basic Vim Keybindings for Navigation",
+    "description": "A look at basic keybindings for navigation in vim",
+    "id": "M3ouN5xPZVI",
+    "tags": ["vim"]
+  },
+  {
+    "title": ".NET Core 2.0 Gallery App Azure Tutorial - Part 4",
+    "description": "In Part 4 of 6 of this series, we'll continue our ASP.NET Core 2.0 MVC gallery project, adding a detail view to our image gallery.",
+    "id": "NafMJCkxLBw",
+    "tags": ["dotnet", "mvc"]
+  },
+  {
+    "title": "Running Unit Tests in VS Code for .NET Core 2.0",
+    "description": "In this episode, I look at how to create a custom task in Visual Studio code to run unit tests with NUnit and dotnet test.",
+    "id": "symKMYFS3nc",
+    "tags": ["unit testing", "dotnet"]
+  },
+  {
+    "title": "Using PostgreSQL with .NET Core 2.0",
+    "description": "In this episode, we look at how to quickly set up a new .NET Core Web API project with a PostgreSQL database connection. PostgreSQL is an advanced, cross-platform open-source database management system.",
+    "id": "md20lQut9EE",
+    "tags": ["dotnet", "postgresql"]
+  },
+  {
+    "title": ".NET Core 2.0 Gallery App Azure Tutorial - Part 3",
+    "description": "In this video, we'll continue our ASP.NET Core 2.0 MVC web app project tutorial.",
+    "id": "mrCDpQVJKqg",
+    "tags": ["dotnet", "mvc"]
+  },
+  {
+    "title": "Builder Pattern Example in C#",
+    "description": "In the first episode of Five Minute Fridays, I very quickly explore the wonderful, sometimes-useful, sometimes-over-complicated Builder Pattern.",
+    "id": "oO-TB8niPoY",
+    "tags": ["dotnet", "design patterns"]
+  },
+  {
+    "title": ".NET Core 2.0 Gallery App Azure Tutorial - Part 2",
+    "description": "In this video, we'll continue our ASP.NET Core 2.0 MVC web app project tutorial.",
+    "id": "PRHl44KrQF8",
+    "tags": ["dotnet", "mvc"]
+  },
+  {
+    "title": ".NET Core 2.0 Gallery App Azure Tutorial Part 1 + Big Announcement!",
+    "description": "In this video, we'll kick off a new ASP.NET Core 2.0 MVC web app project by building an image gallery where we'll host our images using Azure blob storage. I also launch my new premium course.",
+    "id": "UsT6xvdNMJw",
+    "tags": ["dotnet", "mvc"]
+  },
+  {
+    "title": "How I Became a Software Developer",
+    "description": "How I became a software developer (and how to pivot into software development from another discipline). Also, a big announcement and new project later this week!",
+    "id": "yeHbw-1qWrc",
+    "tags": ["career", "vlog"]
+  },
+  {
+    "title": "ASP.NET Core Web App Tutorial - Part 4",
+    "description": "In this video series, I'll be building a library management system from scratch using the ASP .NET Core framework with MVC.",
+    "id": "u8uAoKTplWQ",
+    "tags": ["dotnet", "mvc", "library project"]
+  },
+  {
+    "title": "Machine Learning with Python - Part 2: Decision Tree",
+    "description": "In this series, we'll explore machine learning with Python by building a classifier to determine whether or not we might like a song based on its attributes, which are provided by the Spotify API.",
+    "id": "XDbj6PxaSf0",
+    "tags": ["machine learning", "python", "decision trees", "pandas", "jupyter"]
+  },
+  {
+    "title": "Machine Learning with Python - Part 1: Spotify EDA",
+    "description": "In this series, we'll explore machine learning with Python by building a classifier to determine whether or not we might like a song based on its attributes, which are provided by the Spotify API.",
+    "id": "v_sPnwoT_iA",
+    "tags": ["machine learning", "python", "eda", "pandas", "jupyter"]
+  },
+  {
+    "title": "Angular Firebase Chat Tutorial - Part 3",
+    "description": "In this video series, I'll build a chat application from scratch using Angular 4 with Firebase! In Part 3 we'll wrap things up by adding functionality to automatically scroll to the bottom of the chat feed when starting the app and posting a new message. We'll look at the Angular ViewChild decorator and briefly review life cycle methods.",
+    "id": "IVaek-TWE9I",
+    "tags": ["angular", "firebase"]
+  },
+  {
+    "title": "Angular Firebase Chat Tutorial - Part 2",
+    "description": "In this video series, I'll build a chat application from scratch using Angular 4 with Firebase! In Part 2 we'll style the application, set up User authentication in Firebase, write an authentication service, and manage User objects in a live database.",
+    "id": "p82OeXq_Aoo",
+    "tags": ["angular", "firebase"]
+  },
+  {
+    "title": "Angular Firebase Chat Tutorial - Part 1",
+    "description": "In this video series, I'll build a chat application from scratch using Angular 4 with Firebase! In Part 1 we'll set up all of the components and services for our project and hook the app up to a firebase instance.",
+    "id": "-j0LVc-zLh0",
+    "tags": ["angular", "firebase"]
+  },
+  {
+    "title": "Angular Firebase Image Gallery App Tutorial - Part 2",
+    "description": "In this two-part video series, I build an image Gallery app using Angular for the front end and Firebase for the back end.",
+    "id": "KkVeg0jjsc8",
+    "tags": ["angular", "firebase"]
+  },
+  {
+    "title": "Angular Firebase Image Gallery App Tutorial - Part 1",
+    "description": "In this two-part video series, I build an image Gallery app using Angular for the front end and Firebase for the back end. Firebase is used for user authentication and file storage.",
+    "id": "VkxMmRjPx7k",
+    "tags": ["angular", "firebase"]
+  },
+  {
+    "title": "React Firebase Flashcards App Tutorial",
+    "description": "In this video, we'll build a flash-card application using React and Firebase. We'll look at how to upload JSON data to Firebase to use as our data source.",
+    "id": "pKCAtlsn1Eo",
+    "tags": ["react", "firebase"]
+  },
+  {
+    "title": "React with Firebase Notes / To-Do App Tutorial",
+    "description": "In this video, I build a simple note-taking / to-do CRUD application using React and Firebase styled with flexbox.",
+    "id": "-RtJroTMDf4",
+    "tags": ["react", "firebase"]
+  },
+  {
+    "title": "ASP.NET Core Web App Tutorial - Part 3",
+    "description": "In this video series, I'll be building a library management system from scratch using the ASP .NET Core framework with MVC.",
+    "id": "iE6f7QjVmww",
+    "tags": ["dotnet", "mvc", "library project"]
+  },
+  {
+    "title": "ASP.NET Core Web App Tutorial - Part 2",
+    "description": "In this video series, I'll be building a library management system from scratch using the ASP .NET Core framework with MVC.",
+    "id": "7rcCfCdiB9A",
+    "tags": ["dotnet", "mvc", "library project"]
+  },
+  {
+    "title": "ASP.NET Core Web App Tutorial - Part 1",
+    "description": "In this video series, I'll be building a library management system from scratch using the ASP .NET Core framework with MVC.",
+    "id": "WTVcLFTgDqs",
+    "tags": ["dotnet", "mvc", "library project"]
+  },
+  {
+    "title": "Deploy Angular CLI App to Heroku",
+    "description": "In this video, I deploy an Angular 4 app built with the Angular CLI to Heroku. This is a basic deploy - the key to a successful deployment is configuring the package.json file in your project.",
+    "id": "0bOJjAUXjhI",
+    "tags": ["angular", "heroku", "devops"]
+  },
+  {
+    "title": "Angular 4 Tutorial - GPS Activity Mapping App",
+    "description": "In this video, I build a simple GPS route mapping application using Angular 4.",
+    "id": "EHdSb279Lzg",
+    "tags": ["angular"]
+  },
+  {
+    "title": "Angular 4 Tutorial - Image Search App with Http",
+    "description": "In this video, I build a an image search application using Angular 4 to query the Pixabay API.",
+    "id": "umiW-pfbB5c",
+    "tags": ["angular"]
+  },
+  {
+    "title": "Angular 4 Tutorial - Photo Gallery App",
+    "description": "In this video, I build a simple image gallery application using Angular 4.",
+    "id": "V5-CIZTLyvw",
+    "tags": ["angular"]
+  },
+  {
+    "title": "Starting Angular Development on Windows",
+    "description": "I made this video to show how to get set up and ready to develop Angular applications if you're working on Windows.",
+    "id": "tVfsbFe7GQg",
+    "tags": ["angular"]
+  },
+  {
+    "title": "Configuring Ubuntu for Software Development",
+    "description": "This video demonstrates how I go about setting up a fresh Ubuntu install with the tools I use for development.",
+    "id": "SXdIGNsz2G0",
+    "tags": ["ubuntu"]
+  },
+  {
+    "title": "Vim and tmux for Django Development",
+    "description": "A look at my development setup using Vim and tmux for working in Django and other web frameworks.",
+    "id": "Q1C4gfP2B-4",
+    "tags": ["vim", "tmux", "django"]
+  },
+  {
+    "title": "Two-Stage Planetary Gear Animation in SolidWorks",
+    "description": "Basic two-stage planetary spur gear set created in SolidWorks; 1:49 speed reduction.",
+    "id": "wKTARAH2dIo",
+    "tags": ["solidworks", "mechanical engineering"]
   }
 ]
