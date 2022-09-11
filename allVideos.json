@@ -189,7 +189,7 @@
     "title": "Deploy .NET Core to AWS Elastic Beanstalk with RDS Database",
     "description": "By the end of this .NET Core MVC + AWS Elastic Beanstalk + RDS course, you will understand how to deploy .NET Core MVC applications to the cloud with AWS Elastic Beanstalk.",
     "id": "5Eyjc1l_geY",
-    "tags": ["dotnet", "aws", "elastic beanstalk", "rds", "devops"]
+    "tags": ["dotnet", "aws","rds", "devops"]
   },
   {
     "title": "Refactoring Messy to Testable Code in .NET (Part 8 - Unit Tests)",
@@ -267,13 +267,13 @@
     "title": "Information Retrieval | Part 3 - Inverted Index",
     "description": "An introduction to the Inverted Index data structure used for full-text search.",
     "id": "1g00SP56iSE",
-    "tags": ["information retrieval", "python", "dotnet", "search", "indexing"]
+    "tags": ["information retrieval", "python", "dotnet", "search"]
   },
   {
     "title": "Information Retrieval | Part 2 - Term Document Matrix",
     "description": "An introduction to the concept of a Term Document Matrix - benefits and tradeoffs.",
     "id": "n_nOWTSPpy4",
-    "tags": ["information retrieval", "python", "dotnet", "search", "indexing"]
+    "tags": ["information retrieval", "python", "dotnet", "search"]
   },
   {
     "title": "Information Retrieval | Part 1",
@@ -345,13 +345,13 @@
     "title": "Auth by Example with JWT in Vue + Express",
     "description": "In this video, we'll build a simple web app with authentication and authorization in Vue.js and Express.js, using Auth0 as an auth provider.",
     "id": "MdDsOp9_mM0",
-    "tags": ["javascript", "vue.js", "node", "express", "jwt"]
+    "tags": ["javascript", "vue.js", "node", "JWT"]
   },
   {
     "title": "Blue / Green Deployment Explained",
     "description": "What is the blue / green deployment strategy? In this video, we'll cover the basic idea behind the blue green deployment strategy, why it's a useful approach for enabling zero downtime deployments, as well as some pros and cons, including managing database changes and TTL on DNS records.",
     "id": "h4c6d6qCoO4",
-    "tags": ["devops", "aws", "blue/green"]
+    "tags": ["devops", "aws"]
   },
   {
     "title": "Github Actions for Continuous Integration (CI)",
@@ -369,7 +369,7 @@
     "title": "Easiest Way to Deploy .NET Core MVC to AWS",
     "description": "AWS Elastic Beanstalk is one of the easiest ways to deploy and manage web applications in the cloud.",
     "id": "JlJ7PmNIOac",
-    "tags": ["aws", "dotnet", "devops", "elastic beanstalk"]
+    "tags": ["aws", "dotnet", "devops"]
   },
   {
     "title": "Full-Stack Vue, .NET, PostgreSQL - Part 12",
@@ -1083,13 +1083,13 @@
     "title": "Machine Learning with Python - Part 2: Decision Tree",
     "description": "In this series, we'll explore machine learning with Python by building a classifier to determine whether or not we might like a song based on its attributes, which are provided by the Spotify API.",
     "id": "XDbj6PxaSf0",
-    "tags": ["machine learning", "python", "decision trees", "pandas", "jupyter"]
+    "tags": ["machine learning", "python", "pandas", "jupyter"]
   },
   {
     "title": "Machine Learning with Python - Part 1: Spotify EDA",
     "description": "In this series, we'll explore machine learning with Python by building a classifier to determine whether or not we might like a song based on its attributes, which are provided by the Spotify API.",
     "id": "v_sPnwoT_iA",
-    "tags": ["machine learning", "python", "eda", "pandas", "jupyter"]
+    "tags": ["machine learning", "python", "EDA", "pandas", "jupyter"]
   },
   {
     "title": "Angular Firebase Chat Tutorial - Part 3",
