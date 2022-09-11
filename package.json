@@ -19,6 +19,7 @@
     "nuxt-icon": "^0.1.2",
     "rehype-figure": "^1.0.1",
     "remark": "^14.0.2",
+    "sass": "^1.54.9",
     "shiki": "^0.11.1",
     "shiki-themes": "^0.2.7"
   },

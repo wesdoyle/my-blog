@@ -1,8 +1,7 @@
 <template>
   <div class="py-3 m-auto">
-    <main class="max-w-6xl mx-auto prose sm:px-8 text-slate-600 text-sm">
+    <main class="max-w-6xl mx-auto sm:px-8 text-slate-600 text-sm">
       <slot />
-      <hr />
     </main>
   </div>
 </template>
