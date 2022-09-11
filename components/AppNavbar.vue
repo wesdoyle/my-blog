@@ -4,13 +4,13 @@ const appConfig = useAppConfig()
 
 <template>
   <div class="w-full bg-slate-900">
-    <div class="flex justify-between max-w-6xl pt-3 pb-2 py-1 mx-auto flex-col sm:flex-row sm:px-0">
+    <div class="flex justify-between max-w-6xl pt-3 pb-2 py-1 mx-auto flex-col sm:flex-row sm:px-0 items-center">
       <a href="/">
-        <h1 class="text-white font-semibold hover:text-green-200 p-4 flex text-center">
+        <h1 class="text-white font-semibold hover:text-green-200 p-4 sm:flex sm:text-center block">
           <img
             src="public/sign.png"
             alt="doodle"
-            class="h-[33px] pb-1 mr-2"
+            class="h-[33px] pb-1 mr-2 inline"
           >
           Wes Doyle
         </h1>
@@ -26,7 +26,10 @@ const appConfig = useAppConfig()
           href="/reading"
           class="mr-6 pointer text-white hover:text-green-200"
         >
-          Reading List
+          Reading
+          <span class="hidden sm:inline">
+            List
+          </span>
         </a>
         <a
           href="/videos"
