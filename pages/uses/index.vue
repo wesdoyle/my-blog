@@ -250,8 +250,9 @@
       </h2>
 
       <p class="my-2">
-        These are the things I interact with to learn, recharge, and find inspiration.
+        How I learn, recharge, and find inspiration.
       </p>
+
       <div class="grow mx-auto text-lg grid grid-cols-1 w-full sm:grid-cols-3">
         <div class="my-2 p-2">
           <h4 class="font-semibold text-blue-400">
@@ -296,16 +297,20 @@
           <h4 class="font-semibold text-blue-400">
             Outside Work
           </h4>
-          <p class="text-slate-400 text-sm">
-            Some of the best ideas come on walks
-          </p>
           <ul class="p-0 mb-8 text-sm">
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
                 name="ph:tree-evergreen-duotone"
                 class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
-              State Parks
+              Hiking
+            </li>
+            <li class="flex pl-0 space-x-2 my-2">
+              <Icon
+                name="ph:tree-evergreen-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
+              />
+              Meditation
             </li>
           </ul>
         </div>
@@ -322,7 +327,14 @@
                 name="ph:book-open-duotone"
                 class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
-              O'Reilly Books
+              O'Reilly Media Books
+            </li>
+            <li class="flex pl-0 space-x-2 my-2">
+              <Icon
+                name="ph:book-open-duotone"
+                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
+              />
+              Literary Fiction
             </li>
             <li class="flex pl-0 space-x-2 my-2">
               <Icon
@@ -330,13 +342,6 @@
                 class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
               />
               Audible
-            </li>
-            <li class="flex pl-0 space-x-2 my-2">
-              <Icon
-                name="ph:monitor-duotone"
-                class="flex-shrink-0 w-6 h-6 mr-2 text-blue-500"
-              />
-              A Cloud Guru
             </li>
           </ul>
         </div>
