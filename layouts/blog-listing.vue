@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style lang="postcss">
+<style>
 h2, h3 {
   font-weight: normal;
 }
