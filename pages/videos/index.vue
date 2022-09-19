@@ -15,21 +15,14 @@
         <div class="mb-4 sm:flex sm:flex-wrap inline">
           <div
             v-if="currentFilter && currentFilter.length"
-            class="text-sm m-1 p-1 bg-neutral-400 text-neutral-200 font-mono inline-block sm:block flex-wrap cursor-pointer"
-            @click="clearFilter"
+            class="text-sm m-1 p-1 bg-neutral-400 text-neutral-200 font-mono inline-block sm:block flex-wrap"
           >
             clear filters
           </div>
           <div
             v-for="tag in allTags"
             :key="tag"
-            class="text-sm m-1 p-1 bg-neutral-200 text-neutral-400 font-mono inline-block sm:block flex-wrap cursor-pointer"
-            :class="{
-              'text-blue-200': isInCurrentFilter(tag),
-              'bg-blue-500': isInCurrentFilter(tag),
-              'font-bold': isInCurrentFilter(tag),
-            }"
-            @click="filterBy(tag)"
+            class="text-sm m-1 p-1 bg-neutral-200 text-neutral-400 font-mono inline-block sm:block flex-wrap"
           >
             {{ tag }}
           </div>
@@ -115,27 +108,28 @@ const goToPage = function (pageNumber) {
   currentPage.value = pageNumber
 }
 
-const filterBy = function (tag) {
-  feed.value = allVideos
-  if (currentFilter.value.includes(tag)) {
-    const index = currentFilter.value.indexOf(tag)
-    if (index > -1) {
-      currentFilter.value.splice(index, 1)
-    }
-    if (currentFilter.value.length === 0) {
-      feed.value = allVideos
-      currentFilter.value = []
-      return
-    }
-  } else {
-    currentFilter.value.push(tag)
-  }
-  feed.value = feed.value.filter(obj => obj.tags.some(t => currentFilter.value.includes(t)))
-}
+// const filterBy = function (tag) {
+//   feed.value = allVideos
+//   if (currentFilter.value.includes(tag)) {
+//     const index = currentFilter.value.indexOf(tag)
+//     if (index > -1) {
+//       currentFilter.value.splice(index, 1)
+//     }
+//     if (currentFilter.value.length === 0) {
+//       feed.value = allVideos
+//       currentFilter.value = []
+//       return
+//     }
+//   } else {
+//     currentFilter.value.push(tag)
+//   }
+//   feed.value = feed.value.filter(obj => obj.tags.some(t => currentFilter.value.includes(t)))
+// }
+//
 
-const isInCurrentFilter = function (val) {
-  return currentFilter.value.includes(val)
-}
+// const isInCurrentFilter = function (val) {
+//   return currentFilter.value.includes(val)
+// }
 
 const currentFeed = computed(() => {
   startVid.value = (currentPage.value - 1) * perPage
