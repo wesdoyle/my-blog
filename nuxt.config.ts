@@ -17,10 +17,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon'
   ],
-  plugins: [
-    '~/plugins/disqus.client'
-  ],
-  // https://content.nuxtjs.org
+  // plugins: [
+  //   '~/plugins/disqus.client'
+  // ],
   content: {
     documentDriven: true,
     highlight: {

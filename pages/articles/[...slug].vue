@@ -24,9 +24,6 @@ if (!page.hasValue && process.server) {
       </ContentRenderer>
       <DocumentDrivenNotFound v-else />
     </NuxtLayout>
-    <div class="border-red-200 m-auto max-w-6xl p-8">
-      <Disqus shortname="wesdoyle" />
-    </div>
   </div>
 </template>
 
