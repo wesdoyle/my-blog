@@ -25,6 +25,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon'
   ],
+  plugins: [
+    '~/plugins/disqus.client'
+  ],
   // https://content.nuxtjs.org
   content: {
     documentDriven: true,
