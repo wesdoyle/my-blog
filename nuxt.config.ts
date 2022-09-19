@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 import remarkEmoji from 'remark-emoji'
 import rehypeSlug from 'rehype-slug'
 import remarkSqueezeParagraphs from 'remark-squeeze-paragraphs'
