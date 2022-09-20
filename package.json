@@ -11,22 +11,22 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@nuxt/content": "npm:@nuxt/content-edge@latest",
+    "@nuxt/content": "npm:@nuxt/content@2.1.0",
     "@nuxtjs/color-mode": "^3.1.4",
     "@nuxtjs/markdownit": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^5.3.1",
+    "@nuxtjs/tailwindcss": "^5.1.3",
     "@tailwindcss/typography": "^0.5.4",
     "nuxt-icon": "^0.1.2",
     "rehype-figure": "^1.0.1",
     "remark": "^14.0.2",
-    "sass": "^1.54.9",
     "shiki": "^0.11.1",
+    "sass": "^1.54.9",
     "shiki-themes": "^0.2.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "eslint": "^8.20.0",
-    "nuxt": "npm:nuxt3@latest",
+    "nuxt": "npm:3.0.0-rc.10-27713626.270055b",
     "typescript": "^4.7.4"
   }
 }
