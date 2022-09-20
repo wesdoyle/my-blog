@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineNuxtConfig } from 'nuxt'
 import remarkEmoji from 'remark-emoji'
 import rehypeSlug from 'rehype-slug'
 import remarkSqueezeParagraphs from 'remark-squeeze-paragraphs'
@@ -12,14 +12,20 @@ import rehypeRaw from 'rehype-raw'
 export default defineNuxtConfig({
   ssr: true,
   target: 'static',
+  head: {
+    // link: [
+    //   {
+    //     rel: 'stylesheet',
+    //     href: 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Roboto+Slab&family=Rubik:wght@300;400&display=swap'
+    //   }
+    // ]
+  },
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     'nuxt-icon'
   ],
-  // plugins: [
-  //   '~/plugins/disqus.client'
-  // ],
+  // https://content.nuxtjs.org
   content: {
     documentDriven: true,
     highlight: {

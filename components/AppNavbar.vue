@@ -8,7 +8,7 @@ const appConfig = useAppConfig()
       <a href="/">
         <h1 class="text-white font-semibold hover:text-green-200 p-4 sm:flex sm:text-center block">
           <img
-            src="../public/sign.png"
+            src="public/sign.png"
             alt="doodle"
             class="h-[33px] pb-1 mr-2 inline"
           >
