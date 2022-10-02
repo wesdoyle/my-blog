@@ -10,7 +10,7 @@ import rehypeRaw from 'rehype-raw'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   target: 'static',
   head: {
     // link: [
