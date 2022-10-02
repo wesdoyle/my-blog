@@ -7,6 +7,8 @@ tags:
 - data-munging
 ---
 
+# Malformed Data in Postgres
+
 Sometimes the trickiest part of an ETL problem is transforming the raw data you have into a useful format. 
 
 <!--more-->

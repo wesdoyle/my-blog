@@ -37,7 +37,7 @@ const { data } = await useAsyncData('articles', () => queryContent('articles').s
                   </h3>
                 </div>
                 <div>
-                  <ContentRenderer
+                  <ContentRendererMarkdown
                     :key="article._id"
                     :value="article"
                     :excerpt="true"
