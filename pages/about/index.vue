@@ -16,7 +16,7 @@
             PortalMedia
           </a>.
           My current engineering interests include natural language processing, human learning, and search.
-          I'm a Mechanical Engineer-turned-Software Engineer.
+          I'm a mechanical engineer-turned-software engineer.
         </p>
         <p class="mb-6">
           I'm the founder of
@@ -36,30 +36,17 @@
           >YouTube</a>.
         </p>
         <p class="mb-6">
-          If you're interested in such things, I have a few AWS credentials, including a
-          <a
-            href="https://www.credly.com/badges/20363b28-75b0-451c-8947-f9c1d5d5c520?source=linked_in_profile"
-            target="_blank"
-            class="text-amber-500 underline"
-          >Certified Solutions Architect</a> certification and
-          <a
-            href="https://www.credly.com/badges/2af870f2-828c-42a7-8e4b-46b2193f67e0?source=linked_in_profile"
-            target="_blank"
-            class="text-emerald-500 underline"
-          >Certified Machine Learning Specialty</a> certification.
-        </p>
-        <p class="mb-6">
           I enjoy writing and understanding software as a craft, and love helping other people do the same.
           Outside of work, I spend a lot of time
           <a
             href="/reading"
             class="text-teal-500 underline"
-          >reading</a>.
-          Currently, I'm interested mostly in books about engineering, science,
+          >reading</a> and listening to music.
+          Currently, I'm mostly interested in books about engineering, science,
           contemplative religious traditions, memoirs, and literary fiction.
         </p>
         <p class="mb-6">
-          I also enjoy spending time outside with my family,
+          I also enjoy spending time outside,
           <a
             href="https://www.chess.com/member/wesdoyle"
             target="_blank"
