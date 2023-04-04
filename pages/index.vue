@@ -12,10 +12,6 @@ const { data } = await useAsyncData('articles', () => queryContent('articles').s
         I'm interested mostly in using this space to record thoughts about the experience of being an engineer
         and to log explorations of interesting problems. Any thoughts expressed in these posts are my own.
       </p>
-      <p class="border-l-4 pl-4 border-slate-200 mb-8 text-slate-400">
-        "I see that I am like a wave on the surface of the ocean. I see myself in all the other waves, and I see all the other waves in me. The manifestation or the disappearance of the waves does not lessen the presence of the ocean."
-        <span class="italic">- Thich Nhat Hanh</span>
-      </p>
       <main>
         <ContentList
           path="/reading"
