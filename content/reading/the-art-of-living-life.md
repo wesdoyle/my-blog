@@ -1,7 +1,7 @@
 ---
 title: "The Art of Living: Peace and Freedom in the Here and Now"
 slug: "the-art-of-living"
-author: "Thich Nhat Hanh"
+author: "Thích Nhất Hạnh"
 tags: "mindfulness"
 date: 2020-09-13
 ---
