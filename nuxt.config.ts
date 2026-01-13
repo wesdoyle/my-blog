@@ -19,6 +19,9 @@ export default defineNuxtConfig({
           'rehype-external-links': {}
         }
       }
+    },
+    experimental: {
+      sqliteConnector: 'native'
     }
   },
 
@@ -26,7 +29,7 @@ export default defineNuxtConfig({
 
   vite: {
     optimizeDeps: {
-      exclude: ['sqlite3', 'better-sqlite3']
+      exclude: ['better-sqlite3']
     }
   }
 })
