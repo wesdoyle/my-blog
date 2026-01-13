@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-12',
 
+  ssr: false,
+
   modules: ['@nuxt/content'],
 
   nitro: {
