@@ -16,8 +16,4 @@ frontend:
     baseDirectory: .amplify-hosting
     files:
       - '**/*'
-  # cache temporarily disabled for clean build
-  # cache:
-  #   paths:
-  #     - node_modules/**/*
-  #     - .pnpm-store/**/*
+
