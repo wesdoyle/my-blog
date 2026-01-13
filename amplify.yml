@@ -10,9 +10,9 @@ frontend:
         - pnpm install
     build:
       commands:
-        - NITRO_PRESET=static pnpm generate
+        - pnpm build
   artifacts:
-    baseDirectory: .output/public
+    baseDirectory: .amplify-hosting
     files:
       - '**/*'
   cache:

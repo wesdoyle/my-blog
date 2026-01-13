@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
 
   nitro: {
-    preset: 'static'
+    preset: 'aws-amplify'
   },
 
   content: {
@@ -27,9 +27,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  vite: {
-    optimizeDeps: {
-      exclude: ['better-sqlite3']
+  hooks: {
+    'vite:extendConfig': (config) => {
+      config.resolve = config.resolve || {}
+      config.resolve.alias = config.resolve.alias || {}
+      // @ts-ignore
+      config.resolve.alias['@sqlite.org/sqlite-wasm'] = false
     }
   }
 })
