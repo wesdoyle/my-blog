@@ -3,6 +3,10 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content'],
 
+  nitro: {
+    preset: 'static'
+  },
+
   content: {
     build: {
       markdown: {
