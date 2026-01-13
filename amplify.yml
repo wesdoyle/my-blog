@@ -7,6 +7,7 @@ frontend:
         - nvm use 20 
         - corepack enable
         - corepack prepare pnpm@latest --activate
+        - pnpm config set enable-pre-post-scripts true
         - pnpm install
     build:
       commands:
