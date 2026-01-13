@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
 
   nitro: {
-    preset: 'aws-amplify'
+    preset: 'aws-amplify',
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true
+    }
   },
 
   content: {
