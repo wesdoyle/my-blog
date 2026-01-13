@@ -25,5 +25,14 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+
+  vite: {
+    optimizeDeps: {
+      exclude: ['@sqlite.org/sqlite-wasm']
+    },
+    worker: {
+      format: 'es'
+    }
+  }
 })
