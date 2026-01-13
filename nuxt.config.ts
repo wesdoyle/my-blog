@@ -25,14 +25,5 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['~/assets/css/main.css'],
-
-  hooks: {
-    'vite:extendConfig': (config) => {
-      config.resolve = config.resolve || {}
-      config.resolve.alias = config.resolve.alias || {}
-      // @ts-ignore
-      config.resolve.alias['@sqlite.org/sqlite-wasm'] = false
-    }
-  }
+  css: ['~/assets/css/main.css']
 })
