@@ -10,8 +10,7 @@ const { data: articles } = await useAsyncData('articles', () =>
 <template>
   <div>
     <p>
-      I'm interested mostly in using this space to record thoughts about the experience of being an engineer
-      and to log explorations of interesting problems.
+      This is a space to record my thoughts about the experience of being an engineer and to log explorations of interesting problems.
     </p>
 
     <hr>
