@@ -79,10 +79,9 @@ and implement.  These are the things we'd like to be able to test directly.
 We have no good way to test private members of our objects, as they're explicitly hidden from the
 public interface.  We could superficially work around this by changing an access modifier to `protected`, 
 inheriting from the class we need to test in our test class, exposing these methods in that context to test,
-but this seems like treating a symptom of incomplete design. If you're doing this, the code is probably telling you, 
-
-> "Hey! I don't really want to be an implementation detail - you want to test me, after all.
-> I actually belong to the public interface of a different class."
+but this seems like treating a symptom of incomplete design. If you're doing this, the code is probably telling you: 
+*"Hey! I don't really want to be an implementation detail - you want to test me, after all.
+I actually belong to the public interface of a different class."*
 
 When we _listen to the ways that data flows through our objects_ as we write, refactor, 
 and extend their behavior, they often send us such clues.  We feel the software splitting at 
@@ -92,11 +91,11 @@ As OOP-ers, these seams are often potential object boundaries.
 While there are certain specific reasons for hiding behavior, 
 I've found that private methods are often the result of one of the following:
 
-### 1. - __Hiding "implementation details" that contain behavior we actually care about__
+1. - __Hiding "implementation details" that contain behavior we actually care about__
 
-### 2. - __Failing to realize that an object doesn't really _want_ to be doing part the job we've given it__
+2. - __Failing to realize that an object doesn't really _want_ to be doing part the job we've given it__
 
-### 3. - __Avoiding extracting and naming a new class (usually out of laziness, once we realize we're doing 1. or 2.)__
+3. - __Avoiding extracting and naming a new class (usually out of laziness, once we realize we're doing 1. or 2.)__
 
 When is the creation of a private method a reasonable design decision?  
 I can think of a few valid reasons, each of which occurs in generally limited circumstances:
