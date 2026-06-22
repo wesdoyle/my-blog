@@ -1,8 +1,10 @@
 ---
-title: "Private Methods are often a Smell"
+title: "Private Methods"
 description: "Extract private methods to new objects"
 date: 2020-10-18
 ---
+
+*(2026-06-21 retrospective on this added after the article)*
 
 One of the reasons objects are powerful - in the OOP sense - is because we can write
 and reason about them as anthropomorphic collaborators.*
@@ -115,5 +117,48 @@ names and hides the implementation details of the dependency.
 Objects whose functionality we really care about are hidden, waiting to be extracted and named in many of our private methods!
 
 > * [https://sandimetz.com/blog/2018/21/what-does-oo-afford](https://sandimetz.com/blog/2018/21/what-does-oo-afford)
+
+---
+
+__Looking back in 2026__
+
+This post was originally called "Private methods are often a smell," which was a bad title. 
+Looking back, I was probably beginning to understand the underlying set of problems relating to cohesion. 
+I'd noticed that when a private method reaches into an object's state, it signals a collaborator that hasn't been named, 
+which I over-emphasized as an extraction signal. Privateness clearly isn't something to be inherently avoided. 
+
+I feel that I also had a limited understanding of practical and effective testing. 
+"We have no good way to test private members" ... true, and mostly a feature. 
+Driving behavior through the public interface keeps the tests bound to the object's stated behavior, 
+rather than its implementation details, which is exactly the coupling you want a test suite to avoid. 
+I'd felt my confidence in system design increase by writing increasingly unit-testable code; in doing so, 
+I somewhat over-indexed on the importance of unit tests as a quality of a well-designed system.
+
+I think the root cause driving my early intuition was the notion that "testable" meant *directly unit-testable* in isolation. 
+I felt that a complete design was one which effectively surfaced all behavior to some set of public functions for the purpose of testing. 
+DHH wrote a bit about this kind of orientation in 2014, in his post, ["Test-induced design damage"](https://dhh.dk/2014/test-induced-design-damage.html). 
+I think that there is still a lot of interesting conversation to have about this topic, and testing, in general. 
+A part of me still believes in the original ideal -- that every line of code should be unit testable as part of some public interface within the codebase -- 
+but I think I was missing the forest for the trees a bit in the original post. 
+
+In my experience since, I've found it more important (and more challenging) to identify what the core modules of a system are, 
+to name their public interfaces well, and to keep their implementation details easy to change -- which is easier when the tests don't depend on those details. 
+That orientation tends toward inversion of control, which is healthy; the catch is getting better at deciding *when to extract*. 
+Extraction isn't free: it usually widens a public interface, pushing a new dependency into a constructor or function signature. 
+And it's hard, especially early in a project, to know a domain well enough to identify how it changes. 
+Not every private method is a latent object, and over-zealous extraction can re-couple tests to implementation through mocks.
+
+If an implementation of IoC itself leads to private methods being extracted to an injectable instance of a class with now-public members, 
+then it is indeed wonderful that we can test newly-minted public behavior at a lower level of abstraction than a core module that consumes it by name. 
+However, it is short-sighted to see this as a hallmark of a well-designed system. The cost of extraction may come as a required change 
+to one or more public interfaces, or as a shared dependency consumed by unrelated modules that becomes awkward to share over time. In a purely practical sense, 
+and somewhat ironically, it means that something you could previously reason about in the isolation of a co-located private method is now somewhere else,  
+potentially serving the needs of unknown other consumers. 
+
+Instead of focusing too heavily on what can be extracted, optimize for identifying, naming, and organizing the interfaces of modules that solve *domain problems* 
+in ways that allow you to work within them in isolation as much as possible. Ensure these interfaces can change their shape slowly through message passing, and learn 
+how to properly name and live with private methods within them. There are inevitably things we must decide about a system before we are domain experts. 
+Ideally, we would avoid being in this situation whenever possible, but alas, that's not often the case. Develop clear patterns and conventions that separate 
+technical seams from domain seams, and review what's frequently difficult to understand or change. 
 
 
