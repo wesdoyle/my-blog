@@ -1,7 +1,7 @@
 ---
 title: "Reading and writing about our work"
-description: "Human knowledge sharing is more important than ever"
-date: 2026-07-22
+description: "The importance of human knowledge sharing"
+date: 2026-09-06
 tags:
 - writing 
 - ai 
