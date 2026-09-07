@@ -1,6 +1,6 @@
 ---
-title: "Reading and writing about our work"
-description: "The importance of human knowledge sharing"
+title: "Reading and writing about work"
+description: "The importance of human knowledge sharing at work"
 date: 2026-09-06
 tags:
 - writing 
