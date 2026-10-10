@@ -12,7 +12,7 @@ export default defineContentConfig({
         author: z.string().optional(),
         tags: z.union([z.string(), z.array(z.string())]).optional(),
         slug: z.string().optional(),
-        // Posts: slugs of books on the shelf to list under "Books nearby".
+        // Posts: slugs of books on the shelf to list under "Reading" on the post page.
         nearby: z.array(z.string()).optional()
       })
     })

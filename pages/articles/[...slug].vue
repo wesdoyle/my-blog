@@ -64,8 +64,8 @@ const nearbyThreadName = computed(() => threadName(nearbyThread.value).toLowerCa
 
     <ContentRenderer :value="article" />
 
-    <section v-if="nearby.length" class="sec related" aria-label="Books nearby">
-      <p class="mg">books nearby</p>
+    <section v-if="nearby.length" class="sec related" aria-label="Reading">
+      <p class="mg">reading</p>
       <ul class="books">
         <li v-for="book in nearby" :key="book.path">
           <NuxtLink v-if="book.notes" :to="book.path"><i>{{ book.title }}</i></NuxtLink>
