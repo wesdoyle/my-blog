@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const { mode, init, cycle } = useTheme()
 onMounted(init)
-const label = computed(() => (mode.value === 'auto' ? 'Auto' : mode.value === 'light' ? 'Light' : 'Shadows'))
+const label = computed(() => (mode.value === 'auto' ? 'Auto' : mode.value === 'light' ? 'Light' : 'Dark'))
 </script>
 
 <template>

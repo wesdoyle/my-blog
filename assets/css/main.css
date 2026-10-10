@@ -8,12 +8,27 @@
   --text-secondary: #7D766D;
   --border: #D4D0C8;
   --border-subtle: #E8E4DD;
-  --accent: #5C6B73;
+  --accent: var(--vermilion);
   --max-width: 640px;
+
+  /* Temple and garden colours from the ink palette, used sparingly. */
+  --vermilion: #BE543E;
+  --rust: #9E4036;
+  --umber: #7A583E;
+  --ochre: #BE9A50;
+  --moss: #869858;
+  --pine: #647E50;
+  --slate: #466280;
+  --stone: #928E84;
+  --rose: #CC9C96;
+  --link: var(--slate);
+
+  /* Width of the halftone band at each edge of the viewport. */
+  --band: clamp(22px, calc((100vw - 940px) / 2), 220px);
 }
 
-/* Shadows: the dark theme, after Tanizaki. Follows the system setting unless a
-   theme is pinned with the toggle (data-theme on <html>). */
+/* Dark theme. Follows the system setting unless a theme is pinned with the
+   toggle (data-theme on <html>). */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
@@ -22,7 +37,16 @@
     --text-secondary: #8E8779;
     --border: #3B3732;
     --border-subtle: #2A2724;
-    --accent: #8C9BA3;
+    --accent: var(--vermilion);
+    --vermilion: #D66852;
+    --rust: #B65248;
+    --umber: #967054;
+    --ochre: #D6B468;
+    --moss: #A0B070;
+    --pine: #7E9668;
+    --slate: #6080A0;
+    --stone: #AAA69C;
+    --rose: #E2B6B0;
   }
 }
 
@@ -32,8 +56,17 @@
   --text: #D8D2C8;
   --text-secondary: #8E8779;
   --border: #3B3732;
-  --border-subtle: #2A2724;
-  --accent: #8C9BA3;
+--border-subtle: #2A2724;
+  --accent: var(--vermilion);
+  --vermilion: #D66852;
+  --rust: #B65248;
+  --umber: #967054;
+  --ochre: #D6B468;
+  --moss: #A0B070;
+  --pine: #7E9668;
+  --slate: #6080A0;
+  --stone: #AAA69C;
+  --rose: #E2B6B0;
 }
 
 :root[data-theme="light"] {
@@ -63,15 +96,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* The halftone field sits behind everything. */
-.ink-field {
+/* A static halftone screen in the outer margins, fading out well before the
+   text column. */
+body::before {
+  content: '';
   position: fixed;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  pointer-events: none;
   z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, var(--border) 0.75px, transparent 0.9px);
+  background-size: 8px 8px;
+  -webkit-mask-image: linear-gradient(to right, #000, transparent var(--band), transparent calc(100% - var(--band)), #000);
+  mask-image: linear-gradient(to right, #000, transparent var(--band), transparent calc(100% - var(--band)), #000);
 }
 
 .page {
@@ -129,17 +165,18 @@ p {
 
 /* Links */
 a {
-  color: var(--text);
+  color: var(--link);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 3px;
-  text-decoration-color: var(--border);
+  text-decoration-color: var(--stone);
 }
 
 a:hover,
 a:focus {
+  color: var(--text);
   text-decoration-style: solid;
-  text-decoration-color: var(--text-secondary);
+  text-decoration-color: var(--link);
 }
 
 /* Lists */
@@ -184,7 +221,7 @@ pre code {
 blockquote {
   margin: 1.5rem 0;
   padding-left: 1.5rem;
-  border-left: 1px solid var(--border);
+  border-left: 2px solid var(--rose);
   color: var(--text-secondary);
   font-style: italic;
 }
@@ -243,6 +280,7 @@ th {
 }
 
 .site-title a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -265,7 +303,7 @@ th {
 .site-links a:focus,
 .site-nav a:hover,
 .site-nav a:focus {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .site-nav {
@@ -298,14 +336,14 @@ th {
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .site-nav a.on {
   color: var(--text);
   text-decoration: underline;
   text-decoration-style: solid;
-  text-decoration-color: var(--text);
+  text-decoration-color: var(--vermilion);
   text-underline-offset: 0.45em;
 }
 
@@ -327,7 +365,7 @@ th {
   font-size: 0.875rem;
   font-style: italic;
   line-height: 1.8;
-  color: var(--text-secondary);
+  color: var(--pine);
 }
 
 @media (min-width: 900px) {
@@ -353,7 +391,7 @@ th {
 }
 
 .meta a:hover {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .sc {
@@ -393,7 +431,7 @@ th {
   content: '\201C';
   position: absolute;
   left: -0.55em;
-  color: var(--accent);
+  color: var(--ochre);
 }
 
 .passage > p:last-child::after,
@@ -517,13 +555,13 @@ th {
 }
 
 .threads a:hover {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .threads a.on {
   color: var(--text);
   text-decoration-style: solid;
-  text-decoration-color: var(--text);
+  text-decoration-color: var(--vermilion);
 }
 
 /* Shelf */
@@ -686,7 +724,12 @@ a.nt {
 }
 
 .pager a {
+  color: var(--text);
   text-decoration: none;
+}
+
+.pager a:hover {
+  color: var(--link);
 }
 
 .pager .k {

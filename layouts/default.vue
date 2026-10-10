@@ -5,7 +5,6 @@ const inPosts = computed(() => route.path.startsWith('/posts') || route.path.sta
 
 <template>
   <div>
-    <InkField />
     <div class="page">
       <header class="site-header" role="banner">
         <div class="header-top">
