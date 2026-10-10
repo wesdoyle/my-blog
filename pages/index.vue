@@ -68,5 +68,8 @@ const hero = computed(() => {
         <NuxtLink to="/posts">All posts</NuxtLink>
       </p>
     </section>
+
+    <!-- TEMPORARY: tuning panel for the hidden-text layer. Remove when dialed in. -->
+    <InkTuner />
   </div>
 </template>

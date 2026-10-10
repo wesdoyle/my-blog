@@ -8,6 +8,7 @@
   --text-secondary: #7D766D;
   --border: #D4D0C8;
   --border-subtle: #E8E4DD;
+  --dot: #B9B2A7;
   --accent: var(--vermilion);
   --max-width: 640px;
 
@@ -23,6 +24,10 @@
   --rose: #CC9C96;
   --link: var(--slate);
 
+  /* The shared grid: halftone dots and the hidden text sit on the same
+     squares. The ink layer keeps this in step with its pitch. */
+  --grid: 12px;
+
   /* Width of the halftone band at each edge of the viewport. */
   --band: clamp(22px, calc((100vw - 940px) / 2), 220px);
 }
@@ -37,6 +42,7 @@
     --text-secondary: #8E8779;
     --border: #3B3732;
     --border-subtle: #2A2724;
+    --dot: #4F4A44;
     --accent: var(--vermilion);
     --vermilion: #D66852;
     --rust: #B65248;
@@ -56,7 +62,8 @@
   --text: #D8D2C8;
   --text-secondary: #8E8779;
   --border: #3B3732;
---border-subtle: #2A2724;
+  --border-subtle: #2A2724;
+  --dot: #4F4A44;
   --accent: var(--vermilion);
   --vermilion: #D66852;
   --rust: #B65248;
@@ -97,25 +104,43 @@ body {
 }
 
 /* A static halftone screen in the outer margins, fading out well before the
-   text column. */
+   text column. This is the no-JavaScript fallback: once the ink layer runs,
+   it draws the same dots itself so letters can take their place. */
+html.ink-canvas body::before {
+  display: none;
+}
+
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: radial-gradient(circle, var(--border) 0.75px, transparent 0.9px);
-  background-size: 8px 8px;
+  background-image: radial-gradient(circle, var(--dot) calc(var(--grid) * 0.11), transparent calc(var(--grid) * 0.11 + 0.3px));
+  background-size: var(--grid) var(--grid);
   -webkit-mask-image: linear-gradient(to right, #000, transparent var(--band), transparent calc(100% - var(--band)), #000);
   mask-image: linear-gradient(to right, #000, transparent var(--band), transparent calc(100% - var(--band)), #000);
 }
 
+/* The hidden text layer: a canvas over the dots, under the page. */
+.ink-text {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* The page is an opaque sheet laid over the dots and the hidden text. */
 .page {
   position: relative;
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 1.25rem 5rem;
+  background: var(--bg);
 }
 
 @media (min-width: 480px) {
@@ -389,8 +414,10 @@ th {
     right: 100%;
     width: 150px;
     margin: 0 2.75rem 0 0;
+    padding: 0 0.375rem;
     text-align: right;
     line-height: 1.8rem;
+    background: var(--bg);
   }
 }
 
