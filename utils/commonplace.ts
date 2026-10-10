@@ -89,27 +89,34 @@ export const THREADS: Thread[] = [
     tags: ['religion', 'christianity', 'mindfulness', 'theology', 'meditation', 'mysticism', 'contemplation',
       'spirituality', 'yoga', 'tibet', 'lojong', 'non-dualism', 'hinduism', 'hindusim', 'indian spirituality',
       'gospel', 'god', 'biblical', 'christian gnosticism', 'contemplative tradition', 'praise', 'peace', 'wisdom',
-      'practice', 'basics', 'first-principles']
+      'practice', 'basics', 'first-principles', 'buddhism', 'zen', 'prayer', 'monasticism',
+      'simplicity', 'minimalism', 'scripture', 'blessing']
   },
   {
     id: 'nature',
     name: 'Nature and place',
     tags: ['nature', 'ecology', 'nature writing', 'natural-history', 'mosses', 'botany', 'landscape', 'walking',
-      'environmentalism', 'agriculture', 'trancendentalist', 'biology', 'food', 'travel']
+      'environmentalism', 'agriculture', 'trancendentalist', 'transcendentalism', 'biology', 'food', 'travel',
+      'wilderness', 'birds', 'paleontology']
   },
   {
     id: 'mind',
     name: 'Mind and meaning',
     tags: ['psychology', 'philosophy', 'consciousness', 'neuroscience', 'brain', 'reality', 'symbols', 'time',
       'human nature', 'emergent phenomena', 'consilience', 'deduction', 'science', 'physics', 'epistemology',
-      'linguistics', 'language', 'grief', 'life', 'vulnerability']
+      'linguistics', 'language', 'grief', 'life', 'vulnerability', 'mathematics', 'logic', 'infinity',
+      'cognitive science', 'trauma', 'medicine', 'phenomenology', 'metaphysics', 'whitehead', 'quantum physics',
+      'memory', 'thinking', 'ethics', 'cosmology', 'existentialism', 'jung', 'psychedelics', 'communication',
+      'motivation', 'evolution', 'aesthetics']
   },
   {
     id: 'fiction',
     name: 'Fiction and poetry',
     tags: ['literature', 'russian', 'german', 'bildungsroman', 'poetry', 'short story', 'short stories',
       'science fiction', 'epic fantasy', 'romance', 'cyberpunk', 'tech thriller', 'beat literature',
-      'american literature', 'nebraska', 'argentina', 'virgnia woolf', 'essays', 'writing']
+      'american literature', 'nebraska', 'argentina', 'virgnia woolf', 'essays', 'writing', 'novel', 'novella',
+      'classics', 'folklore', 'irish', 'japanese', 'modernism', 'fantasy', 'magical realism', 'dystopia',
+      'medieval', 'music']
   },
   {
     id: 'engineering',
@@ -118,21 +125,23 @@ export const THREADS: Thread[] = [
       'teams', 'startups', 'sre', 'okrs', 'project management', 'software architecture', 'microservices',
       'enterprise architecture', 'distributed systems', 'databases', 'scalability', 'career', 'work', 'habits',
       'goals', 'discipline', 'systems', 'complexity', 'open source', 'github', 'tech industry',
-      'software development', 'expertise', 'testing', 'oop', 'refactoring', 'postgres', 'data-munging']
+      'software development', 'expertise', 'testing', 'oop', 'refactoring', 'postgres', 'data-munging',
+      'economics']
   },
   {
     id: 'information',
     name: 'Information and computation',
     tags: ['computer science', 'networking', 'information theory', 'information', 'information age',
       'cryptography', 'cybersecurity', 'privacy', 'computation', 'turing', 'claude shannon', 'machine learning',
-      'technology and politics', 'ai', 'future']
+      'technology and politics', 'ai', 'future', 'media']
   },
   {
     id: 'history',
     name: 'History and peoples',
     tags: ['history', 'ancient history', 'american-history', 'memoir', 'biography', 'archaeology', 'anthropology',
       'mesoamerica', 'north america', 'vikings', 'scandanavia', 'slavery', '20th-century', '19th century',
-      '20th century', 'political', 'journalism', 'anarchism', 'autobiography', 'society', 'indegenous wisdom']
+      '20th century', 'political', 'journalism', 'anarchism', 'autobiography', 'society', 'indegenous wisdom',
+      'indigenous wisdom', 'africa', 'scandinavia']
   }
 ]
 

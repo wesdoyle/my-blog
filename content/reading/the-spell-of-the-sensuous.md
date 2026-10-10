@@ -3,4 +3,5 @@ title: "The Spell of the Sensuous: Perception and Language in a More-Than-Human 
 slug: "the-spell-of-the-sensuous"
 author: "David Abram"
 date: 2026-02-01
+tags: "philosophy, nature, language, phenomenology"
 ---

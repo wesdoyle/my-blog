@@ -3,4 +3,5 @@ title: "Quantum Computing Explained for Beginners: The Science, Technology, and 
 slug: "quantum-computing-explained-for-beginners-the-science-technology-and-impact"
 author: "Pantheon Space Academy"
 date: 2024-03-25
+tags: "computation, physics, computer science"
 ---
