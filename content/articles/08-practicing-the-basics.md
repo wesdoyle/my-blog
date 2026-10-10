@@ -6,6 +6,10 @@ tags:
 - basics 
 - first-principles 
 - practice
+nearby:
+- the-three-pillars-of-zen
+- a-still-forest-pool-the-insight-meditation-of-achaan-chah-quest-book-unabridged
+- peace-is-every-step
 ---
 
 As a kid, I was fortunate enough to have role models in Senseis Judy and Reese Rigby. At their dojo, 

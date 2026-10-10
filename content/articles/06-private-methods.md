@@ -2,6 +2,12 @@
 title: "Private Methods"
 description: "Extract private methods to new objects"
 date: 2020-10-18
+tags:
+- oop
+- refactoring
+nearby:
+- clean-architecture
+- fundamentals-of-software-architecture
 ---
 
 *(2026-06-21 retrospective on this added after the article)*

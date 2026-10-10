@@ -6,6 +6,10 @@ tags:
 - writing 
 - ai 
 - practice
+nearby:
+- working-in-public
+- software-engineering-at-google
+- an-elegant-puzzle
 ---
 
 I've recently had the opportunity to refresh a knowledge base at work. 

@@ -5,6 +5,17 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content'],
 
+  app: {
+    head: {
+      script: [
+        {
+          // Apply a pinned theme before first paint to avoid a flash.
+          innerHTML: "try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}"
+        }
+      ]
+    }
+  },
+
   nitro: {
     preset: 'aws-amplify'
   },

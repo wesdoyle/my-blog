@@ -2,6 +2,13 @@
 title: "Testing and Epistemology"
 description: "Thinking about end-to-end tests from an epistemological perspective"
 date: 2021-12-19
+tags:
+- epistemology
+- testing
+nearby:
+- philosophical-investigations
+- simply-wittgenstein
+- godels-proof
 ---
 
 I find it interesting to think about software testing in terms of epistemology.
