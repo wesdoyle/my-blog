@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const route = useRoute()
-const inPosts = computed(() => route.path.startsWith('/posts') || route.path.startsWith('/articles'))
+const inPosts = computed(() => route.path === '/' || route.path.startsWith('/articles'))
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const inPosts = computed(() => route.path.startsWith('/posts') || route.path.sta
           <ThemeToggle />
         </div>
         <nav class="site-nav" role="navigation" aria-label="Main navigation">
-          <NuxtLink to="/posts" :class="{ on: inPosts }">Posts</NuxtLink>
+          <NuxtLink to="/" :class="{ on: inPosts }">Posts</NuxtLink>
           <NuxtLink to="/reading" active-class="on">Reading</NuxtLink>
           <NuxtLink to="/passages" active-class="on">Passages</NuxtLink>
           <NuxtLink to="/about" active-class="on">About</NuxtLink>

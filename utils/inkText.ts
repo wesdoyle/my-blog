@@ -92,18 +92,18 @@ export interface InkParams {
 }
 
 export const DEFAULT_INK: InkParams = {
-  pitch: 16,
-  fontSize: 12,
-  dotGlyph: '·',
+  pitch: 14,
+  fontSize: 10,
+  dotGlyph: '`',
   radius: 80,
-  cycleMs: 675,
-  cycleSdMs: 150,
+  cycleMs: 725,
+  cycleSdMs: 300,
   flipMs: 35,
   fadeMs: 4750,
   holdMs: 2000,
-  alphaMin: 0.15,
-  alphaMax: 0.85,
-  colorMix: 1
+  alphaMin: 0,
+  alphaMax: 0.75,
+  colorMix: 0.5
 }
 
 // A standard normal sample, rejected until it lies within one standard

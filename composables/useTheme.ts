@@ -1,9 +1,15 @@
-// Theme: follows the system by default; Light or Shadows can be pinned and are
+// Theme: follows the system until the switch pins Light or Dark, which is
 // remembered in this browser.
 export type ThemeMode = 'auto' | 'light' | 'dark'
 
 export function useTheme () {
   const mode = useState<ThemeMode>('theme-mode', () => 'auto')
+  const systemDark = useState<boolean>('theme-system-dark', () => false)
+
+  // The theme actually showing, whichever way it was decided.
+  const effective = computed<'light' | 'dark'>(() =>
+    mode.value === 'auto' ? (systemDark.value ? 'dark' : 'light') : mode.value
+  )
 
   function apply (m: ThemeMode) {
     mode.value = m
@@ -24,11 +30,15 @@ export function useTheme () {
       if (saved === 'light' || saved === 'dark') m = saved
     } catch {}
     mode.value = m
+    const mq = window.matchMedia('(prefers-color-scheme: dark)')
+    systemDark.value = mq.matches
+    mq.addEventListener('change', e => { systemDark.value = e.matches })
   }
 
-  function cycle () {
-    apply(mode.value === 'auto' ? 'light' : mode.value === 'light' ? 'dark' : 'auto')
+  // Flip to the opposite of what is showing, and pin it.
+  function toggle () {
+    apply(effective.value === 'dark' ? 'light' : 'dark')
   }
 
-  return { mode, init, cycle }
+  return { mode, effective, init, toggle, apply }
 }

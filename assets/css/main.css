@@ -139,13 +139,13 @@ body::before {
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 3rem 1.25rem 5rem;
+  padding: 2.5rem 1.25rem 4rem;
   background: var(--bg);
 }
 
 @media (min-width: 480px) {
   .page {
-    padding: 4rem 1.5rem 6rem;
+    padding: 3rem 1.5rem 4.5rem;
   }
 }
 
@@ -280,12 +280,12 @@ th {
 
 /* Header */
 .site-header {
-  margin-bottom: 3.25rem;
+  margin-bottom: 2.5rem;
 }
 
 @media (min-width: 480px) {
   .site-header {
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -351,8 +351,8 @@ th {
   justify-content: space-between;
   align-items: baseline;
   gap: 0.75rem 1.5rem;
-  margin-top: 6rem;
-  padding-top: 1.5rem;
+  margin-top: 4rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--border-subtle);
   font-size: 0.75rem;
   line-height: 1.8;
@@ -360,22 +360,53 @@ th {
   text-transform: uppercase;
 }
 
-.theme-toggle {
+/* Theme switch: a small pill with a sliding knob carrying a sun or moon. */
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
   padding: 0;
   border: 0;
   background: none;
-  font-family: inherit;
-  font-size: 0.75rem;
-  line-height: 1.8;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-secondary);
   cursor: pointer;
+  color: var(--text-secondary);
 }
 
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
-  color: var(--link);
+.theme-switch-track {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 18px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--border-subtle);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-switch-knob {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--text-secondary);
+  box-shadow: 0 0 0 1px var(--border);
+  transition: transform 0.2s ease;
+}
+
+.theme-switch[aria-checked='true'] .theme-switch-knob {
+  transform: translateX(16px);
+  color: var(--text);
+}
+
+.theme-switch:hover .theme-switch-track,
+.theme-switch:focus-visible .theme-switch-track {
+  border-color: var(--link);
 }
 
 .site-nav a.on {
@@ -390,12 +421,12 @@ th {
    and sit above their block on narrow ones. */
 .sec {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 480px) {
   .sec {
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 }
 
@@ -492,7 +523,7 @@ th {
 }
 
 .hero {
-  margin: 5rem 0;
+  margin: 3.5rem 0;
 }
 
 /* Home: latest posts */
@@ -541,13 +572,13 @@ th {
 .post-list {
   list-style: none;
   padding: 0;
-  margin: 3rem 0 0;
+  margin: 2rem 0 0;
 }
 
 .post-list > li {
   position: relative;
   margin: 0;
-  padding: 1.375rem 0;
+  padding: 1rem 0;
 }
 
 .post-list > li:first-child {
@@ -560,7 +591,7 @@ th {
 
 @media (min-width: 900px) {
   .post-list > li + li .mg {
-    top: 1.375rem;
+    top: 1rem;
   }
 }
 
@@ -607,12 +638,12 @@ th {
 
 /* Shelf */
 .shelf .sec {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 900px) {
   .shelf .sec {
-    margin-top: 3rem;
+    margin-top: 2.25rem;
   }
 
   .shelf .mg {
@@ -621,7 +652,7 @@ th {
 }
 
 .shelf .sec:first-child {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
 
 .books {
@@ -683,12 +714,12 @@ a.nt {
 
 /* Passages page */
 .passage-list {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 480px) {
   .passage-list {
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 }
 
@@ -698,12 +729,12 @@ a.nt {
 }
 
 .passage-list figure + figure {
-  margin-top: 3rem;
+  margin-top: 2.25rem;
 }
 
 @media (min-width: 480px) {
   .passage-list figure + figure {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 }
 
@@ -746,8 +777,8 @@ a.nt {
 }
 
 .related {
-  margin-top: 5rem;
-  padding-top: 1.75rem;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -761,7 +792,7 @@ a.nt {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .pager a {
