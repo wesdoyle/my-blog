@@ -7,9 +7,12 @@ const inPosts = computed(() => route.path.startsWith('/posts') || route.path.sta
   <div>
     <div class="page">
       <header class="site-header" role="banner">
-        <p class="site-title">
-          <NuxtLink to="/">Wes Doyle</NuxtLink>
-        </p>
+        <div class="header-top">
+          <p class="site-title">
+            <NuxtLink to="/">Wes Doyle</NuxtLink>
+          </p>
+          <ThemeToggle />
+        </div>
         <nav class="site-nav" role="navigation" aria-label="Main navigation">
           <NuxtLink to="/posts" :class="{ on: inPosts }">Posts</NuxtLink>
           <NuxtLink to="/reading" active-class="on">Reading</NuxtLink>
@@ -28,7 +31,6 @@ const inPosts = computed(() => route.path.startsWith('/posts') || route.path.sta
           <a href="https://youtube.com/c/wesdoyle" target="_blank" rel="noopener">YouTube</a>
           <a href="https://www.linkedin.com/in/wes-doyle/" target="_blank" rel="noopener">LinkedIn</a>
         </nav>
-        <ThemeToggle />
       </footer>
     </div>
   </div>

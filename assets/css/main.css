@@ -264,6 +264,13 @@ th {
   }
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
 .site-title {
   margin: 0;
   font-size: 1.1875rem;
@@ -329,13 +336,14 @@ th {
 }
 
 .theme-toggle {
-  margin-left: auto;
   padding: 0;
   border: 0;
   background: none;
-  font: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
+  font-family: inherit;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--text-secondary);
   cursor: pointer;
 }
