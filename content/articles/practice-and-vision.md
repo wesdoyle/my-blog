@@ -25,8 +25,8 @@ grounded vantage point. That is, it _interprets_ the current state, and thereby 
 possible to give thoughtful strategic reasons for sustaining or changing it. Vision requires 
 a map, a compass, and a reason for action or non-action. It helps us understand where we're 
 going, anchored by a detailed technical understanding of where we are. Vision imbues work with 
-meaning (though not the _only_ meaning). It resonates within a stable organization when it aligns 
-with a _shared purpose_ for working toward some end. Like practice, a skillful vision isn't static. 
+meaning (though not the only meaning). It resonates within a stable organization when it aligns 
+with a shared purpose for working toward some end. Like practice, a skillful vision isn't static. 
 As we embark on any project, we traverse real terrain, and so we must learn to adapt as reality diverges 
 from the vision. Over the course of a journey, a vision may become more or less clear. Either way, 
 it must survive or be replaced quickly. In my experience, in the absence of a strong vision, 
