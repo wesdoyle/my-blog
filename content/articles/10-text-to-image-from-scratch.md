@@ -89,7 +89,7 @@ Building a text-to-image model involves working on "text input" and "image gener
 encoding text as something a network can use -- a vector, or a sequence of vectors, that carries meaning. The second is generating images, 
 given some input text.
 
-Each sub-problem is, in some sense, pretty interesting on its own. So, I split the project into two parts, along these lines. I kept a small 
+Each sub-problem is pretty interesting on its own. So, I split the project into two parts, along these lines. I kept a small 
 number of important constraints throughout development. First, I wanted to start small enough to train on my laptop (a MacBook Pro with 
 [PyTorch's Metal backend](https://developer.apple.com/metal/pytorch/)), and second, I wanted to write the constituent parts by hand, and 
 stop to ask questions along the way to improve my understanding. As a result, I built the original tokenizer, attention, residual blocks, 
@@ -305,7 +305,7 @@ an image caption isn't such a simple label. It's an arbitrary sentence represent
 of the model, into vector representation.
 
 My first approach was to use the transformer I'd already trained. When it reads text input, each layer produces a vector for each token, and 
-those vectors are, in some sense, the model's "understanding" of the text so far. I fed them to the image model directly. I also tried a 
+those vectors are the model's "understanding" of the text so far. I fed them to the image model directly. I also tried a 
 second approach, involving training a small version of [CLIP](https://arxiv.org/abs/2103.00020) myself.
 
 CLIP, which I'll describe in a moment, learns to connect text and image pairs. The dataset I was working with had 78k paintings with 
