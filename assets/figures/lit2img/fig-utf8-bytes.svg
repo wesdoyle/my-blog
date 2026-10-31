@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 236" role="img" aria-label="Three characters and how a byte-level tokenizer sees them. The letter a is one byte and one token. The letter e-acute is two bytes, C3 A9, which a merge learned from the corpus turns into one token. A rare Chinese character is three bytes that never merge, so it costs three tokens but is still representable." font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="currentColor">
+  <defs>
+    <marker id="u8-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+  </defs>
+  <text x="80" y="22" font-size="11" opacity="0.6">character</text>
+  <text x="80" y="104" font-size="11" opacity="0.6">UTF-8 bytes</text>
+  <text x="80" y="188" font-size="11" opacity="0.6">tokens</text>
+
+  <!-- column 1: a -->
+  <text x="190" y="24" text-anchor="middle" font-size="10.5" font-weight="600" letter-spacing="0.08" opacity="0.7">COMMON LETTER</text>
+  <text x="190" y="72" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="40">a</text>
+  <line x1="190" y1="80" x2="190" y2="94" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <rect x="168" y="98" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <text x="190" y="116" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">61</text>
+  <line x1="190" y1="130" x2="190" y2="150" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <rect x="168" y="154" width="44" height="26" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A"/>
+  <text x="190" y="172" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace" font-weight="600">a</text>
+  <text x="190" y="212" text-anchor="middle" font-size="10.5" opacity="0.65">1 byte → 1 token</text>
+
+  <!-- column 2: é -->
+  <text x="400" y="24" text-anchor="middle" font-size="10.5" font-weight="600" letter-spacing="0.08" opacity="0.7">COMMON ACCENTED LETTER</text>
+  <text x="400" y="72" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="40">é</text>
+  <line x1="400" y1="80" x2="400" y2="94" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <rect x="352" y="98" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <text x="374" y="116" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">C3</text>
+  <rect x="404" y="98" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <text x="426" y="116" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">A9</text>
+  <path d="M374,130 V140 H426 V130" fill="none" stroke="#15897A" stroke-width="1.25"/>
+  <line x1="400" y1="140" x2="400" y2="150" stroke="#15897A" stroke-width="1.25" marker-end="url(#u8-a)"/>
+  <text x="345" y="144" text-anchor="end" font-size="10.5" fill="#15897A">a learned merge</text>
+  <rect x="352" y="154" width="96" height="26" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A"/>
+  <text x="400" y="172" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace" font-weight="600">é</text>
+  <text x="400" y="212" text-anchor="middle" font-size="10.5" opacity="0.65">2 bytes → 1 token: frequent, so merged</text>
+
+  <!-- column 3: rare character -->
+  <text x="620" y="24" text-anchor="middle" font-size="10.5" font-weight="600" letter-spacing="0.08" opacity="0.7">RARE CHARACTER</text>
+  <text x="620" y="72" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="36">語</text>
+  <line x1="620" y1="80" x2="620" y2="94" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <rect x="546" y="98" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <text x="568" y="116" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">E8</text>
+  <rect x="598" y="98" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <text x="620" y="116" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">AA</text>
+  <rect x="650" y="98" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <text x="672" y="116" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">9E</text>
+  <line x1="568" y1="130" x2="568" y2="150" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <line x1="620" y1="130" x2="620" y2="150" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <line x1="672" y1="130" x2="672" y2="150" stroke="currentColor" stroke-opacity="0.5" marker-end="url(#u8-a)"/>
+  <rect x="546" y="154" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.7"/>
+  <text x="568" y="172" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">E8</text>
+  <rect x="598" y="154" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.7"/>
+  <text x="620" y="172" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">AA</text>
+  <rect x="650" y="154" width="44" height="26" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.7"/>
+  <text x="672" y="172" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">9E</text>
+  <text x="620" y="212" text-anchor="middle" font-size="10.5" opacity="0.65">3 bytes → 3 tokens: rare, never merged</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-label="The autoencoder. A 256 by 256 by 3 image, 196,608 numbers, goes through a convolutional encoder that halves the resolution four times down to a 32 by 32 by 4 latent, 4,096 numbers, 48 times smaller. A decoder maps the latent back to a 256 by 256 by 3 reconstruction. The diffusion model is trained and sampled in the latent, and everything it produces passes through the decoder." font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="currentColor">
+  <defs>
+    <marker id="ae2-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+    <marker id="ae2-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#15897A"/></marker>
+  </defs>
+
+  <!-- input image -->
+  <rect x="30" y="60" width="96" height="96" rx="2" fill="none" stroke="currentColor"/>
+  <text x="78" y="104" text-anchor="middle">image</text>
+  <text x="78" y="120" text-anchor="middle" font-size="10.5" opacity="0.7">256 × 256 × 3</text>
+  <text x="78" y="178" text-anchor="middle" font-size="10.5" opacity="0.65">196,608 numbers</text>
+  <line x1="126" y1="108" x2="150" y2="108" stroke="currentColor" stroke-width="1.25" marker-end="url(#ae2-a)"/>
+
+  <!-- encoder -->
+  <polygon points="152,66 272,92 272,124 152,150" fill="none" stroke="currentColor"/>
+  <text x="212" y="112" text-anchor="middle">encoder</text>
+  <text x="212" y="178" text-anchor="middle" font-size="10.5" opacity="0.65">halves the resolution</text>
+  <text x="212" y="192" text-anchor="middle" font-size="10.5" opacity="0.65">four times</text>
+  <line x1="272" y1="108" x2="334" y2="108" stroke="currentColor" stroke-width="1.25" marker-end="url(#ae2-a)"/>
+
+  <!-- latent -->
+  <rect x="336" y="88" width="40" height="40" rx="2" fill="#15897A" fill-opacity="0.16" stroke="#15897A" stroke-width="1.5"/>
+  <text x="356" y="112" text-anchor="middle" font-weight="600">z</text>
+  <text x="356" y="38" text-anchor="middle" font-weight="600" fill="#15897A">latent</text>
+  <text x="356" y="54" text-anchor="middle" font-size="10.5" opacity="0.7">32 × 32 × 4</text>
+  <text x="356" y="70" text-anchor="middle" font-size="10.5" opacity="0.65">4,096 numbers, 48× smaller</text>
+  <line x1="376" y1="108" x2="438" y2="108" stroke="currentColor" stroke-width="1.25" marker-end="url(#ae2-a)"/>
+
+  <!-- decoder -->
+  <polygon points="440,92 560,66 560,150 440,124" fill="none" stroke="currentColor"/>
+  <text x="500" y="112" text-anchor="middle">decoder</text>
+  <text x="500" y="178" text-anchor="middle" font-size="10.5" opacity="0.65">doubles it back up</text>
+  <line x1="560" y1="108" x2="584" y2="108" stroke="currentColor" stroke-width="1.25" marker-end="url(#ae2-a)"/>
+
+  <!-- output -->
+  <rect x="586" y="60" width="96" height="96" rx="2" fill="none" stroke="currentColor"/>
+  <text x="634" y="104" text-anchor="middle">reconstruction</text>
+  <text x="634" y="120" text-anchor="middle" font-size="10.5" opacity="0.7">256 × 256 × 3</text>
+  <text x="634" y="178" text-anchor="middle" font-size="10.5" opacity="0.65">close to the original,</text>
+  <text x="634" y="192" text-anchor="middle" font-size="10.5" opacity="0.65">never the original</text>
+
+  <!-- where diffusion happens -->
+  <path d="M356,230 V134" fill="none" stroke="#15897A" stroke-width="1.25" stroke-dasharray="4 3" marker-end="url(#ae2-b)"/>
+  <text x="372" y="226" font-size="10.5" font-weight="600" fill="#15897A">the diffusion model is trained and sampled here,</text>
+  <text x="372" y="240" font-size="10.5" fill="#15897A">and everything it makes goes out through the decoder</text>
+</svg>

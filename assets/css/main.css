@@ -852,3 +852,28 @@ a.nt {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Article figures (components/content/Fig.vue). Inlined SVGs use currentColor, so they follow the theme. */
+.fig {
+  margin: 2rem 0;
+}
+.fig-svg svg,
+.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.fig figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  opacity: 0.72;
+}
+.fig figcaption p {
+  margin: 0;
+}
+@media (min-width: 900px) {
+  .fig {
+    margin-inline: -4rem;
+  }
+}

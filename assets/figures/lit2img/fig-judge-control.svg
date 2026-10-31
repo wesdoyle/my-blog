@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-label="Two CLIP judges compared on the same images. For each judge a segment runs from its mean similarity to wrong captions to its similarity to the correct caption; the segment length is the margin. OpenAI B/32 has the higher raw score, 0.2828, but a short margin of 0.0774 because its wrong-caption baseline is 0.2054. LAION B/32 scores 0.2794 raw with a baseline of 0.1458, a margin of 0.1336." font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="currentColor">
+<line x1="211.1" y1="136" x2="211.1" y2="142" stroke="currentColor" stroke-opacity="0.5"/>
+<line x1="333.3" y1="136" x2="333.3" y2="142" stroke="currentColor" stroke-opacity="0.5"/>
+<line x1="455.6" y1="136" x2="455.6" y2="142" stroke="currentColor" stroke-opacity="0.5"/>
+<line x1="577.8" y1="136" x2="577.8" y2="142" stroke="currentColor" stroke-opacity="0.5"/>
+<line x1="700" y1="136" x2="700" y2="142" stroke="currentColor" stroke-opacity="0.5"/>
+<line x1="150" y1="136" x2="700" y2="136" stroke="currentColor" stroke-opacity="0.3"/>
+<text x="211.1" y="156" text-anchor="middle" opacity="0.6">0.14</text>
+<text x="333.3" y="156" text-anchor="middle" opacity="0.6">0.18</text>
+<text x="455.6" y="156" text-anchor="middle" opacity="0.6">0.22</text>
+<text x="577.8" y="156" text-anchor="middle" opacity="0.6">0.26</text>
+<text x="700" y="156" text-anchor="middle" opacity="0.6">0.30</text>
+<text x="425" y="175" text-anchor="middle" opacity="0.7">CLIP similarity · hollow = wrong captions (clip_base), filled = correct caption (clip_score)</text>
+<text x="16" y="66" font-weight="600">OpenAI B/32</text>
+<line x1="411" y1="62" x2="647.6" y2="62" stroke="#15897A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="411" cy="62" r="6" fill="none" stroke="#15897A" stroke-width="2"><title>OpenAI B/32 clip_base 0.2054</title></circle>
+<circle cx="647.6" cy="62" r="6" fill="#15897A"><title>OpenAI B/32 clip_score 0.2828</title></circle>
+<text x="401" y="66" text-anchor="end" font-variant-numeric="tabular-nums" opacity="0.8">0.2054</text>
+<text x="658" y="66" font-variant-numeric="tabular-nums" opacity="0.8">0.2828</text>
+<text x="529" y="50" text-anchor="middle" font-weight="600" fill="#15897A">margin 0.0774</text>
+<text x="16" y="116" font-weight="600">LAION B/32</text>
+<line x1="228.8" y1="112" x2="637.2" y2="112" stroke="#15897A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="228.8" cy="112" r="6" fill="none" stroke="#15897A" stroke-width="2"><title>LAION B/32 clip_base 0.1458</title></circle>
+<circle cx="637.2" cy="112" r="6" fill="#15897A"><title>LAION B/32 clip_score 0.2794</title></circle>
+<text x="218" y="116" text-anchor="end" font-variant-numeric="tabular-nums" opacity="0.8">0.1458</text>
+<text x="648" y="116" font-variant-numeric="tabular-nums" opacity="0.8">0.2794</text>
+<text x="433" y="100" text-anchor="middle" font-weight="600" fill="#15897A">margin 0.1336</text>
+</svg>

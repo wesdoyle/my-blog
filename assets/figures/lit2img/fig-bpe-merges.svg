@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 322" role="img" aria-label="Byte-pair encoding of the phrase Call me Ishmael. The bottom row is the fifteen raw bytes; each row above applies one learned merge, producing a longer token highlighted in green, until the top row reads as ten tokens: Call, space-me, and the eight bytes of space-Ishmael left unmerged." font-family="JetBrains Mono, Menlo, Consolas, monospace" font-size="13" fill="currentColor">
+<defs><marker id="bpe-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<text x="150" y="16" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="10.5" opacity="0.6">encoding replays the learned merges in order, bottom to top</text>
+<text x="718" y="16" text-anchor="end" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="10.5" opacity="0.6">illustrative merge order</text>
+<text x="0" y="271" font-size="11.5" opacity="0.65">bytes · 15</text>
+<rect x="150" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="168" y="271" text-anchor="middle" opacity="0.85">C</text>
+<rect x="188" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="206" y="271" text-anchor="middle" opacity="0.85">a</text>
+<rect x="226" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="244" y="271" text-anchor="middle" opacity="0.85">l</text>
+<rect x="264" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="282" y="271" text-anchor="middle" opacity="0.85">l</text>
+<rect x="302" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="320" y="271" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="340" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="358" y="271" text-anchor="middle" opacity="0.85">m</text>
+<rect x="378" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="396" y="271" text-anchor="middle" opacity="0.85">e</text>
+<rect x="416" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="434" y="271" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="454" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="472" y="271" text-anchor="middle" opacity="0.85">I</text>
+<rect x="492" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="510" y="271" text-anchor="middle" opacity="0.85">s</text>
+<rect x="530" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="548" y="271" text-anchor="middle" opacity="0.85">h</text>
+<rect x="568" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="586" y="271" text-anchor="middle" opacity="0.85">m</text>
+<rect x="606" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="624" y="271" text-anchor="middle" opacity="0.85">a</text>
+<rect x="644" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="662" y="271" text-anchor="middle" opacity="0.85">e</text>
+<rect x="682" y="250" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="700" y="271" text-anchor="middle" opacity="0.85">l</text>
+<text x="0" y="227" font-size="11.5" opacity="0.85">merge 1 · l + l</text>
+<rect x="150" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="168" y="227" text-anchor="middle" opacity="0.85">C</text>
+<rect x="188" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="206" y="227" text-anchor="middle" opacity="0.85">a</text>
+<rect x="226" y="206" width="74" height="32" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A" stroke-width="1.25"/>
+<text x="263" y="227" text-anchor="middle" font-weight="600">ll</text>
+<rect x="302" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="320" y="227" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="340" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="358" y="227" text-anchor="middle" opacity="0.85">m</text>
+<rect x="378" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="396" y="227" text-anchor="middle" opacity="0.85">e</text>
+<rect x="416" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="434" y="227" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="454" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="472" y="227" text-anchor="middle" opacity="0.85">I</text>
+<rect x="492" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="510" y="227" text-anchor="middle" opacity="0.85">s</text>
+<rect x="530" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="548" y="227" text-anchor="middle" opacity="0.85">h</text>
+<rect x="568" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="586" y="227" text-anchor="middle" opacity="0.85">m</text>
+<rect x="606" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="624" y="227" text-anchor="middle" opacity="0.85">a</text>
+<rect x="644" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="662" y="227" text-anchor="middle" opacity="0.85">e</text>
+<rect x="682" y="206" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="700" y="227" text-anchor="middle" opacity="0.85">l</text>
+<text x="0" y="183" font-size="11.5" opacity="0.85">merge 2 · a + ll</text>
+<rect x="150" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="168" y="183" text-anchor="middle" opacity="0.85">C</text>
+<rect x="188" y="162" width="112" height="32" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A" stroke-width="1.25"/>
+<text x="244" y="183" text-anchor="middle" font-weight="600">all</text>
+<rect x="302" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="320" y="183" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="340" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="358" y="183" text-anchor="middle" opacity="0.85">m</text>
+<rect x="378" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="396" y="183" text-anchor="middle" opacity="0.85">e</text>
+<rect x="416" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="434" y="183" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="454" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="472" y="183" text-anchor="middle" opacity="0.85">I</text>
+<rect x="492" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="510" y="183" text-anchor="middle" opacity="0.85">s</text>
+<rect x="530" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="548" y="183" text-anchor="middle" opacity="0.85">h</text>
+<rect x="568" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="586" y="183" text-anchor="middle" opacity="0.85">m</text>
+<rect x="606" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="624" y="183" text-anchor="middle" opacity="0.85">a</text>
+<rect x="644" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="662" y="183" text-anchor="middle" opacity="0.85">e</text>
+<rect x="682" y="162" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="700" y="183" text-anchor="middle" opacity="0.85">l</text>
+<text x="0" y="139" font-size="11.5" opacity="0.85">merge 3 · C + all</text>
+<rect x="150" y="118" width="150" height="32" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A" stroke-width="1.25"/>
+<text x="225" y="139" text-anchor="middle" font-weight="600">Call</text>
+<rect x="302" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="320" y="139" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="340" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="358" y="139" text-anchor="middle" opacity="0.85">m</text>
+<rect x="378" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="396" y="139" text-anchor="middle" opacity="0.85">e</text>
+<rect x="416" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="434" y="139" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="454" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="472" y="139" text-anchor="middle" opacity="0.85">I</text>
+<rect x="492" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="510" y="139" text-anchor="middle" opacity="0.85">s</text>
+<rect x="530" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="548" y="139" text-anchor="middle" opacity="0.85">h</text>
+<rect x="568" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="586" y="139" text-anchor="middle" opacity="0.85">m</text>
+<rect x="606" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="624" y="139" text-anchor="middle" opacity="0.85">a</text>
+<rect x="644" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="662" y="139" text-anchor="middle" opacity="0.85">e</text>
+<rect x="682" y="118" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="700" y="139" text-anchor="middle" opacity="0.85">l</text>
+<text x="0" y="95" font-size="11.5" opacity="0.85">merge 4 · ␣ + m</text>
+<rect x="150" y="74" width="150" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="225" y="95" text-anchor="middle" opacity="0.85">Call</text>
+<rect x="302" y="74" width="74" height="32" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A" stroke-width="1.25"/>
+<text x="339" y="95" text-anchor="middle" font-weight="600">␣m</text>
+<rect x="378" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="396" y="95" text-anchor="middle" opacity="0.85">e</text>
+<rect x="416" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="434" y="95" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="454" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="472" y="95" text-anchor="middle" opacity="0.85">I</text>
+<rect x="492" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="510" y="95" text-anchor="middle" opacity="0.85">s</text>
+<rect x="530" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="548" y="95" text-anchor="middle" opacity="0.85">h</text>
+<rect x="568" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="586" y="95" text-anchor="middle" opacity="0.85">m</text>
+<rect x="606" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="624" y="95" text-anchor="middle" opacity="0.85">a</text>
+<rect x="644" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="662" y="95" text-anchor="middle" opacity="0.85">e</text>
+<rect x="682" y="74" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="700" y="95" text-anchor="middle" opacity="0.85">l</text>
+<text x="0" y="51" font-size="11.5" opacity="0.85">merge 5 · ␣m + e</text>
+<rect x="150" y="30" width="150" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="225" y="51" text-anchor="middle" opacity="0.85">Call</text>
+<rect x="302" y="30" width="112" height="32" rx="3" fill="#15897A" fill-opacity="0.16" stroke="#15897A" stroke-width="1.25"/>
+<text x="358" y="51" text-anchor="middle" font-weight="600">␣me</text>
+<rect x="416" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="434" y="51" text-anchor="middle" opacity="0.85">␣</text>
+<rect x="454" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="472" y="51" text-anchor="middle" opacity="0.85">I</text>
+<rect x="492" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="510" y="51" text-anchor="middle" opacity="0.85">s</text>
+<rect x="530" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="548" y="51" text-anchor="middle" opacity="0.85">h</text>
+<rect x="568" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="586" y="51" text-anchor="middle" opacity="0.85">m</text>
+<rect x="606" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="624" y="51" text-anchor="middle" opacity="0.85">a</text>
+<rect x="644" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="662" y="51" text-anchor="middle" opacity="0.85">e</text>
+<rect x="682" y="30" width="36" height="32" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.4"/>
+<text x="700" y="51" text-anchor="middle" opacity="0.85">l</text>
+<text x="718" y="308" text-anchor="end" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="10.5" opacity="0.6">top row: 10 tokens · a rare word stays in bytes until the corpus teaches its merges</text>
+<line x1="742" y1="282" x2="742" y2="40" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.25" marker-end="url(#bpe-a)"/>
+</svg>

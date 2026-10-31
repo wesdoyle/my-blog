@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-label="Causal self-attention over four tokens. Each token is projected to a query, key and value. Queries against keys give a four-by-four score matrix; the cells above the diagonal are masked to minus infinity so a token cannot attend to later tokens; softmax over each row gives weights that combine the value vectors into new token vectors." font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="currentColor">
+<defs>
+<marker id="at-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+<pattern id="at-h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-opacity="0.28"/></pattern>
+</defs>
+<text x="16" y="52" font-size="10.5" font-weight="600" letter-spacing="0.08" opacity="0.6">TOKENS</text>
+<rect x="16" y="66" width="78" height="30" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+<text x="55" y="85" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">Call</text>
+<rect x="16" y="116" width="78" height="30" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+<text x="55" y="135" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">␣me</text>
+<rect x="16" y="166" width="78" height="30" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+<text x="55" y="185" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">␣Ish</text>
+<rect x="16" y="216" width="78" height="30" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+<text x="55" y="235" text-anchor="middle" font-family="JetBrains Mono, Menlo, monospace">mael</text>
+<line x1="94" y1="81" x2="124" y2="150" stroke="currentColor" stroke-opacity="0.4"/>
+<line x1="94" y1="131" x2="124" y2="150" stroke="currentColor" stroke-opacity="0.4"/>
+<line x1="94" y1="181" x2="124" y2="150" stroke="currentColor" stroke-opacity="0.4"/>
+<line x1="94" y1="231" x2="124" y2="150" stroke="currentColor" stroke-opacity="0.4"/>
+<rect x="124" y="120" width="88" height="60" rx="3" fill="none" stroke="currentColor"/>
+<text x="168" y="146" text-anchor="middle">project to</text>
+<text x="168" y="164" text-anchor="middle" font-weight="600">Q, K, V</text>
+<line x1="212" y1="150" x2="296" y2="150" stroke="currentColor" stroke-width="1.25" marker-end="url(#at-a)"/>
+<text x="254" y="144" text-anchor="middle" font-weight="600">Q</text>
+<path d="M212,136 H262 V40 H372 V56" fill="none" stroke="currentColor" stroke-width="1.25" marker-end="url(#at-a)"/>
+<text x="318" y="34" text-anchor="middle" font-weight="600">K</text>
+<path d="M212,164 H262 V300 H535 V160" fill="none" stroke="currentColor" stroke-width="1.25" marker-end="url(#at-a)"/>
+<text x="400" y="294" text-anchor="middle" font-weight="600">V</text>
+<text x="300" y="64" font-size="10.5" opacity="0.7">scores = QKᵀ / √d</text>
+<text transform="rotate(-90 290 108)" x="290" y="108" text-anchor="middle" font-size="10.5" opacity="0.6">queries</text>
+<!-- row 0 -->
+<rect x="301" y="71" width="34" height="34" fill="#15897A" fill-opacity="0.85"/>
+<rect x="337" y="71" width="34" height="34" fill="url(#at-h)" stroke="currentColor" stroke-opacity="0.3"/><text x="354" y="92" text-anchor="middle" font-size="10" opacity="0.55">−∞</text>
+<rect x="373" y="71" width="34" height="34" fill="url(#at-h)" stroke="currentColor" stroke-opacity="0.3"/><text x="390" y="92" text-anchor="middle" font-size="10" opacity="0.55">−∞</text>
+<rect x="409" y="71" width="34" height="34" fill="url(#at-h)" stroke="currentColor" stroke-opacity="0.3"/><text x="426" y="92" text-anchor="middle" font-size="10" opacity="0.55">−∞</text>
+<!-- row 1 -->
+<rect x="301" y="107" width="34" height="34" fill="#15897A" fill-opacity="0.3"/>
+<rect x="337" y="107" width="34" height="34" fill="#15897A" fill-opacity="0.7"/>
+<rect x="373" y="107" width="34" height="34" fill="url(#at-h)" stroke="currentColor" stroke-opacity="0.3"/><text x="390" y="128" text-anchor="middle" font-size="10" opacity="0.55">−∞</text>
+<rect x="409" y="107" width="34" height="34" fill="url(#at-h)" stroke="currentColor" stroke-opacity="0.3"/><text x="426" y="128" text-anchor="middle" font-size="10" opacity="0.55">−∞</text>
+<!-- row 2 -->
+<rect x="301" y="143" width="34" height="34" fill="#15897A" fill-opacity="0.18"/>
+<rect x="337" y="143" width="34" height="34" fill="#15897A" fill-opacity="0.35"/>
+<rect x="373" y="143" width="34" height="34" fill="#15897A" fill-opacity="0.65"/>
+<rect x="409" y="143" width="34" height="34" fill="url(#at-h)" stroke="currentColor" stroke-opacity="0.3"/><text x="426" y="164" text-anchor="middle" font-size="10" opacity="0.55">−∞</text>
+<!-- row 3 -->
+<rect x="301" y="179" width="34" height="34" fill="#15897A" fill-opacity="0.12"/>
+<rect x="337" y="179" width="34" height="34" fill="#15897A" fill-opacity="0.22"/>
+<rect x="373" y="179" width="34" height="34" fill="#15897A" fill-opacity="0.36"/>
+<rect x="409" y="179" width="34" height="34" fill="#15897A" fill-opacity="0.55"/>
+<text x="372" y="232" text-anchor="middle" font-size="10.5" opacity="0.7">softmax over each row → weights</text>
+<text x="452" y="92" font-size="10.5" font-weight="600">masked</text>
+<text x="452" y="106" font-size="10.5" opacity="0.7">no looking ahead</text>
+<line x1="444" y1="142" x2="470" y2="142" stroke="currentColor" stroke-width="1.25" marker-end="url(#at-a)"/>
+<rect x="470" y="126" width="130" height="32" rx="3" fill="none" stroke="currentColor"/>
+<text x="535" y="146" text-anchor="middle">weighted sum of V</text>
+<line x1="600" y1="142" x2="626" y2="142" stroke="currentColor" stroke-width="1.25" marker-end="url(#at-a)"/>
+<rect x="628" y="126" width="116" height="32" rx="3" fill="#15897A" fill-opacity="0.14" stroke="#15897A"/>
+<text x="686" y="146" text-anchor="middle" font-size="11">new token vectors</text>
+</svg>
