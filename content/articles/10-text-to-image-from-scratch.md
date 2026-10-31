@@ -55,9 +55,10 @@ fun and self learning, I suspect my takeaways here, as they relate to the AI/ML 
 professionally.
 
 - Using frontier models for learning a new subject, or deepening one's understanding of an existing topic, can be valuable. However, I'm 
-  also left with the feeling that I still *don't know what I don't know*. I knew nothing about the mechanics of [Stable 
-  Diffusion](https://arxiv.org/abs/2112.10752), [CLIP](https://arxiv.org/abs/2103.00020), [DiT](https://arxiv.org/abs/2212.09748), or 
-  [Classifier-Free Guidance](https://arxiv.org/abs/2207.12598) prior to starting this project.  With previous experience only on the text 
+  also left with the feeling that I still *don't know what I don't know*. I knew nothing about the mechanics of latent diffusion 
+  ([Stable Diffusion](https://arxiv.org/abs/2112.10752)), [CLIP](https://arxiv.org/abs/2103.00020), diffusion transformers 
+  ([DiT](https://arxiv.org/abs/2212.09748)), or [Classifier-Free Guidance](https://arxiv.org/abs/2207.12598) prior to starting this 
+  project.  With previous experience only on the text 
   side of things, how long would it have taken me to piece together the necessary components to construct and loosely understand the basic 
   ideas behind this model entirely on my own?  Are there glaring technical mistakes or oversights that I made along the way?  I still don't 
   really know, because I relied on my own interaction with a frontier model to serve as a guide for my learning, as a hobbyist. It's 
