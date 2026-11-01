@@ -35,11 +35,11 @@ of the project.  In an initial prompt, I explained the overarching goal, includi
 requirement to iteratively build upon an index of concepts in the domain.  This prompt generated a high-level sequence of modules, each of 
 which covered a specific aspect of the architecture or training and serving processes.
 
-Over the course of about three weeks, I spent several evenings writing and generating code for each module and reading papers about concepts 
-as they were introduced, based on examples provided by the LLM.  I found it useful to treat the code output of the LLM like traditional 
-print material, and the prose surrounding the code as a conversation with the author about the topic or implementation. As the frontier 
-model generated code implementing each part of the model in its output, I still chose to transpose most of it manually, as I would 
-historically with any book on the subject. This preserved a kind of slowness that I feel is important to developing understanding.
+Over the course of about a month, I spent several evenings a week writing and generating code for each module and reading papers about concepts 
+as they were introduced, based on examples provided by the LLM.  I found it useful to treat the code output of the frontier model like traditional 
+print material, and the prose surrounding the code as a conversation with the author about the topic or implementation. As the LLM  generated code 
+implementing each part of the model in its output, I chose to transpose most of it manually, as I would if I were using a book. This preserved a 
+kind of slowness that I feel is important in learning.
 
 ::fig{src="/images/lit2img/fig-centerpiece-2.jpg" alt="A four-by-four grid of generated images with the prompt printed under each: sea, beach, farmland, flowers and portraits in color, and four pen-and-ink drawings."}
 A sample of 16 images generated from sentences describing a variety of different subjects, styles, and moods.
@@ -47,42 +47,45 @@ A sample of 16 images generated from sentences describing a variety of different
 
 ## General Learnings and Takeaways
 
-Before I describe my path through this project, I want to cover my learnings, as I think they're really the most interesting point of the 
-whole effort. I thought about putting this section at the end, but I suspect that you're at least as interested in my general takeaways as 
-any of the particular decisions I made while building a toy text-to-image model.
+On the AI/ML side of things, I suspect the issues I encountered are obvious to folks who do this work professionally.
+However, a few takeaways from the project seem to generalize well beyond the purely technical learnings. This was the first 
+significant personal project in which I used a frontier model to act primarily as a "guide" through topics that were to me. 
 
-A few things from this project seem to me to generalize well beyond learning how these models work. As someone coming at this project for 
-fun and self learning, I suspect my takeaways here, as they relate to the AI/ML side of things, are obvious to people who do this work 
-professionally.
-
-- Using frontier models for learning a new subject, or deepening one's understanding of an existing topic, can be valuable. However, I'm 
-  also left with the feeling that I still *don't know what I don't know*. I knew nothing about the mechanics of latent diffusion 
+- Using frontier models for learning a new subject, or deepening my understanding of an existing topic, can be valuable. However, I'm 
+  still left with the feeling that I *don't know what I don't know*. I knew nothing about the mechanics of latent diffusion 
   ([Stable Diffusion](https://arxiv.org/abs/2112.10752)), [CLIP](https://arxiv.org/abs/2103.00020), diffusion transformers 
   ([DiT](https://arxiv.org/abs/2212.09748)), or [Classifier-Free Guidance](https://arxiv.org/abs/2207.12598) prior to starting this 
-  project.  With previous experience only on the text 
-  side of things, how long would it have taken me to piece together the necessary components to construct and loosely understand the basic 
-  ideas behind this model entirely on my own?  Are there glaring technical mistakes or oversights that I made along the way?  I still don't 
-  really know, because I relied on my own interaction with a frontier model to serve as a guide for my learning, as a hobbyist. It's 
-  possible that more exploratory prompting could've helped uncover more unknowns. It still seems that using LLMs as learning companions 
-  unlocks a massive potential for self-learners. However, I'm not sure that it entirely replaces reading curated research, human mentorship, 
-  and controlled experimentation. All of these "traditional" avenues of learning are much slower processes, and typically have the explicit 
-  objective *of learning* rather than producing results. LLMs-as-mentor seem to sit in a much murkier hybrid area of learning and *the 
-  production of a completed result*. Even when that completed result is learning "material," it's far too easy to slip out of self-directed 
-  learning and into "build mode." I'm very curious to learn how other folks use frontier models as learning companions.
-- I feel a kind of attenuation in my capacity to sit with a problem, or explore the possible space of experiments I could run along the way. 
-  Historically, I've felt my capacity to learn is really just a well-developed tolerance for "being stuck for long periods of time with a 
-  lack of understanding."  From now on, there is always a trade-off; ask the LLM and get un-stuck, as it pertains to your next output 
-  objective, or stay stuck for longer periods of time in order to exercise your capacity to learn. I think that deep human learning will 
-  continue to require direct effort in training one's capacity to sit with not-knowing, and to take the often winding path to solving 
-  problems "manually" that emerges. Furthermore, I think that there is immeasurable value in walking these winding paths; I should write 
-  more about that sometime.
-- Diving into the ML side of things, it's important to remember that there is generally a loss floor. It took me a while to understand why 
-  the loss could reach some asymptotic value while the images produced by the model continued to get better. A large part of the loss is 
+  project.  From that perspective, it was a great experience working with the LLM to build a structured learning path through the relevant 
+  technology while building. As I worked, I produced a running HTML artifact that provided definitions of useful terms and ideas. This
+  allowed me to preserve a kind of dynamic study guide that I could read while *not producing code* that I feel helped improve my understanding 
+  over time. However, with previous experience only on the text side of the model, I wonder how long would it have taken me to piece together the necessary 
+  knowledge to construct and sufficiently understand the ideas behind this model without a structured guide?  Are there important technical 
+  mistakes or oversights that I made along the way?  I still don't really know, because I relied on my own interaction with a frontier model 
+  to serve as a guide for my learning. It's possible that more exploratory prompting could've helped uncover more unknowns. It still seems 
+  that using LLMs as learning companions unlocks a massive potential for self-learners. However, I'm not sure that it entirely replaces reading 
+  curated research, controlled experimentation, and, in particular, **human mentorship**. These traditional avenues for learning are much 
+  slower processes, and typically have the explicit objective *of learning* rather than *producing*. The LLM-as-mentor approach seems to
+  occupy a much murkier area, a hybrid of learning and *the rapid production of a completed result*. Even when that completed result is learning 
+  "material," it's now far too easy to slip out of self-directed learning and into "build mode." I'm very curious to learn how other folks use 
+  frontier models as learning companions. I'm a believer in "building to learn," but, without care, this path feels more like "watch it get built to learn," 
+  which is, in my opinion, an illusory form of learning. I don't become a much better pole vaulter by watching an olympic athlete compete; I need 
+  some adequate combination of watching and doing to develop skillfully.
+- **I feel a kind of attenuation in my capacity to sit with a problem**, I've often felt my capacity to learn is really just a well-developed 
+  tolerance for "being stuck for long periods of time with a lack of understanding."  From now on, there is always a trade-off; ask the 
+  LLM and get un-stuck, as it pertains to your next output objective, or stay stuck for longer periods of time in relative ignorance to exercise your 
+  capacity to learn. **I believe deep human learning will continue to require direct effort in training one's capacity to sit with not-knowing, 
+  and often taking the winding path to solving problems "manually" that emerges.** I think that there is immeasurable value in walking these winding paths, 
+  literally to *experience* acts of learning. I should write more about that sometime.
+- On the ML side of things, it's important to remember that there is generally a loss floor. It took me a while to understand why 
+  the loss could reach some asymptotic value while the images produced by the model continued to get "better." A large part of the loss is 
   irreducible. At high noise levels, the original image simply can't be recovered from the input, so the best any model can do is predict a 
   kind of "average." While a loss that moves from 1.136 to 1.127 looks very small, if the floor is near 1.100, the part the model can 
   actually improve has dropped by a quarter! Reading the loss as if zero were the goal is not a reasonable expectation. The loss number 
   always has some constant offset. I suppose one way to look at this is to find out, for any given measurement (in ML or anywhere else), how 
   good it can possibly be. Once information has been lost, no change in the model can recover it.
+
+
+With those takeways in mind, what follows is a summary of the project itself.
 
 ## Breaking the project down into two problems
 
