@@ -66,17 +66,17 @@ significant personal project in which I used a frontier model to act primarily a
   curated research, controlled experimentation, and, in particular, **human mentorship**. These traditional avenues for learning are much 
   slower processes, and typically have the explicit objective *of learning* rather than *producing*. The LLM-as-mentor approach seems to
   occupy a much murkier area, a hybrid of learning and *the rapid production of a completed result*. Even when that completed result is learning 
-  "material," it's now far too easy to slip out of self-directed learning and into "build mode." I'm very curious to learn how other folks use 
+  "material," it's now far too easy to slip out of self-directed learning and into "build mode." I'm curious to learn how other folks use 
   frontier models as learning companions. I'm a believer in "building to learn," but, without care, this path feels more like "watch it get built to learn," 
-  which is, in my opinion, an illusory form of learning. I don't become a much better pole vaulter by watching an Olympic athlete compete; I need 
+  which is an illusory form of learning, especially as a beginner. I don't become a much better pole vaulter by watching an Olympic athlete compete; I need 
   some adequate combination of watching and doing to develop skillfully.
 - **I feel a kind of attenuation in my capacity to sit with a problem.** I've often felt my capacity to learn is really just a well-developed 
   tolerance for "being stuck for long periods of time with a lack of understanding."  From now on, there is always a trade-off; ask the 
   LLM and get un-stuck, as it pertains to your next output objective, or stay stuck for longer periods of time in relative ignorance in order to exercise your 
   capacity to learn. **I believe deep human learning will continue to require direct effort in training one's capacity to sit with not-knowing, 
-  and often in taking the winding path that emerges when solving problems "manually."** I think that there is immeasurable value in walking these winding paths, 
-  literally to *experience* acts of learning. I should write more about that sometime.
-- On the ML side of things, it's important to remember that there is generally a loss floor. It took me a while to understand why 
+  and often in taking the winding path that emerges when solving problems "manually."** There is immeasurable value in walking these winding paths 
+  to *experience* acts of learning. I should write more about that sometime.
+- On the ML side of things, there is generally a loss floor. It took me a while to understand why 
   the loss could reach some asymptotic value while the images produced by the model continued to get "better." A large part of the loss is 
   irreducible. At high noise levels, the original image simply can't be recovered from the input, so the best any model can do is predict a 
   kind of "average." While a loss that moves from 1.136 to 1.127 looks very small, if the floor is near 1.100, the part the model can 
@@ -100,8 +100,8 @@ stop to ask questions along the way to improve my understanding. As a result, I 
 autoencoder, samplers, and the evaluation metrics using only PyTorch's primitives.
 
 I'd like to clarify what parts of this model I built "by hand." While I built and trained a tokenizer and transformer for the text side of 
-the model myself, in the end, as I will describe, I replaced it with a pre-trained text encoder, trained on a much larger and broader 
-dataset. The parts of the model that generate images, the autoencoder and the diffusion model, I wrote and trained myself. I also wrote the 
+the model myself, in the end, as I will describe, **I replaced it with a pre-trained text encoder, trained on a much larger and broader 
+dataset**. The parts of the model that generate images, the autoencoder and the diffusion model, I wrote and trained myself. I also wrote the 
 samplers and the code that evaluates the results. In the final model and training pipeline, all parts that read text or judge images use 
 pre-trained models. The text encoder in the final model is a pre-trained one from OpenAI, the captions were written by a pre-trained vision 
 model, and the metrics I report lean on pre-trained models.
