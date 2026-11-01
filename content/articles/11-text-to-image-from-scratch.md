@@ -17,7 +17,7 @@ A sample of 16 images generated from sentences describing a variety of different
 This article follows a project called [lit2img](https://github.com/wesdoyle/lit2img), which renders sequences of images from input text. I 
 worked on this purely for fun. I've recently been looking for projects I could complete that would bring me a sense of joy, which is 
 something I long for in my work these days.  Enjoyable software-related work, for me, often contains elements of storytelling and 
-information visualization. One previous project that comes to mind was [Limbus](https://github.com/wesdoyle/limbus), a *very basic* tool for 
+information visualization. One previous project that comes to mind was [Limbus](https://github.com/wesdoyle/limbus), a very basic tool for 
 visualizing the running sentiment of text over time. I built Limbus with the idea that it would be fun to visualize linguistic signals (like 
 emotional sentiment) over the course of a novel.
 
@@ -59,13 +59,13 @@ significant personal project in which I used a frontier model to act primarily a
   technology while building. As I worked, I produced a running HTML artifact that provided definitions of useful terms and ideas. This
   preserved a kind of dynamic study guide that I could read while *not producing code*, which I feel improved my understanding 
   over time. However, with previous experience only on the text side of the model, I wonder how long it would have taken me to piece together the necessary 
-  knowledge to construct and sufficiently understand the ideas behind this model without a structured guide.  Are there important technical 
+  knowledge to construct and sufficiently understand the ideas behind this model without such an easily-manufactured guide.  Are there important technical 
   mistakes or oversights that I made along the way?  I still don't know, because I relied on my own interaction with a frontier model 
   to serve as a guide for my learning. It's possible that more exploratory prompting could've helped uncover more unknowns. It still seems 
   that using LLMs as learning companions unlocks a massive potential for self-learners. However, I'm not sure that it entirely replaces reading 
   curated research, controlled experimentation, and, in particular, **human mentorship**. These traditional avenues for learning are much 
-  slower processes, and typically have the explicit objective *of learning* rather than *producing*. The LLM-as-mentor approach seems to
-  occupy a much murkier area, a hybrid of learning and *the rapid production of a completed result*. Even when that completed result is learning 
+  slower processes, and typically have the explicit objective of *learning* rather than *producing*. The LLM-as-mentor approach seems to
+  occupy a much murkier area, a hybrid of learning and the rapid production of a completed result. Even when that completed result is learning 
   "material," it's now far too easy to slip out of self-directed learning and into "build mode." I'm curious to learn how other folks use 
   frontier models as learning companions. I'm a believer in "building to learn," but, without care, this path feels more like "watch it get built to learn," 
   which is an illusory form of learning, especially as a beginner. I don't become a much better pole vaulter by watching an Olympic athlete compete; I need 
@@ -75,7 +75,7 @@ significant personal project in which I used a frontier model to act primarily a
   LLM and get un-stuck, as it pertains to your next output objective, or stay stuck for longer periods of time in relative ignorance in order to exercise your 
   capacity to learn. **I believe deep human learning will continue to require direct effort in training one's capacity to sit with not-knowing, 
   and often in taking the winding path that emerges when solving problems "manually."** There is immeasurable value in walking these winding paths 
-  to *experience* acts of learning. I should write more about that sometime.
+  to *experience acts of learning*. I should write more about that sometime.
 - On the ML side of things, there is generally a loss floor. It took me a while to understand why 
   the loss could reach some asymptotic value while the images produced by the model continued to get "better." A large part of the loss is 
   irreducible. At high noise levels, the original image can't be recovered from the input, so the best any model can do is predict a 
@@ -154,7 +154,7 @@ is fascinating to me. I'd like to write about it in a separate post some day.
 ::fig{src="lit2img/fig-causal-attention.svg"}
 One head of causal self-attention, the key mechanism of the transformer. Each token is projected to a query, a key and a value. Scores above 
 the diagonal are masked before the softmax; a token can only attend to itself and the tokens before it, it learns nothing from any token 
-that comes after it, chronologically. The same mechanism reappears later, pointed at caption vectors instead of earlier tokens.
+that comes after it, chronologically.
 ::
 
 After a minimal amount of local training, prompting the transformer model with “Call me Ishmael,” generated somewhat comprehensible prose. 
@@ -189,8 +189,8 @@ generated images with a frozen classifier and measures the distance between the 
 | x₀ | 0.049 | 51.8 |
 
 As you can see, validation loss and FID do not track each other. The x₀ model has the best loss and the worst FID; the ε model has a 
-middling loss and the best FID. The training objective (in this case, the FID) and the loss did not 
-produce the same ranking. I suspect this overarching problem of "scoring" different approaches is another complex topic worth exploring in 
+middling loss and the best FID. The training objective (in this case, the FID) and the loss did not produce the same ranking. 
+I suspect this overarching problem of "scoring" different approaches is another complex topic worth exploring in 
 more detail; something I imagine engineers in the ML and AI space must wrestle with as part of real-world problem solving.
 
 In any case, flow matching with 50 network evaluations came within two FID points of ε with a thousand. Therefore, I chose to continue with 
@@ -198,7 +198,7 @@ flow matching as the prediction target.
 
 ::fig{src="/images/lit2img/fig-prediction-targets.png" alt="A grid of sixteen small abstract images, becoming more defined from top to bottom, with visible differences between columns."}
 The same architecture trained with four different prediction targets. Each cell is the model's estimate of the clean image from the same 
-heavily noised inputs, at four points in training; the originals are in the bottom row.
+heavily noised inputs, at four points in training; the originals are shown in the bottom row.
 ::
 
 ## Looking at the data
@@ -305,7 +305,7 @@ The same sentence with the word describing color changed, rendered four times fr
 ::
 
 Up to this point, the image model had only been steered by a small discrete set of category labels, like "portrait" or "landscape." However, 
-an image caption isn't such a simple label. It's an arbitrary sentence represented as a sequence of tokens, to be embedded by the text side 
+unlike a label, a descriptive caption is an arbitrary sentence represented as a sequence of tokens, to be embedded by the text side 
 of the model, into vector representation.
 
 My first approach was to use the transformer I'd already trained. When it reads text input, each layer produces a vector for each token, and 
@@ -318,7 +318,7 @@ learned to respond to captions. However, neither worked especially well.
 
 Intuitively, it makes sense that these approaches wouldn't work well. Semantically, there is likely an enormous gap between 
 the space of information encoded by the captioned images, and the space of information embedding the 20 novels used to train the 
-transformer. The transformer could likely produce somewhat believable next-tokens, but at no point in training did I connect the token 
+transformer. The transformer could produce somewhat believable next-tokens, but at no point in training did I connect the token 
 "boat" to what a boat looks like.
 
 CLIP is a pair of models released by OpenAI in 2021 on about 400 million image-caption pairs from the internet. One model reads images, the 
@@ -338,26 +338,26 @@ then trained using input from CLIP.
 
 ::fig{src="lit2img/fig-text-conditioning-paths.svg"}
 One block of the image model with its two conditioning paths. The timestep modulates each normalization and gates each residual connection; 
-the caption enters only through cross-attention, behind a projection that starts at zero, so at the first step of training changing the 
-caption changes nothing and the model has to learn to listen.
+the caption enters only through cross-attention, behind a projection that starts at zero.
 ::
 
 The more difficult question was how to measure whether there was good, interpretable correlation between the images and the captions. I 
-quickly realized that looking at them individually wouldn't scale well! I imagine that it's also easy to fool yourself when you *want* the images to look as if they correlate to the captions.
+realized that looking at them each individually wouldn't scale well! I imagine that it's also easy to fool yourself when you *want* the 
+images to look as if they correlate to the captions.
 
 The approach I settled on is called *retrieval*. I generated an image for each of a set of held-out captions, then passed each image to 
-*another* CLIP model, along with all of the captions, and asked it to rank them. If this judge model put the correct caption first, that 
+*another* CLIP model, along with all of the captions, ranked them accordingly. When the judge model ranked the correct caption first, that 
 counted as a hit. The ratio of hits was the score.
 
-It's interesting to consider what the judge CLIP was measuring. A CLIP similarity score between an image and its caption is a number, 
-and it mixes two different things together. It goes up when the image matches the caption, which is the objective. But, some images might 
+It's interesting to consider what the judge CLIP was measuring. A CLIP similarity score between an image and its caption is a number 
+that mixes two different things together. It goes up when the image matches the caption, which is the objective. But, some images might 
 score well against *almost any* caption. Some images in CLIP space sit close to lots of captions at once, while, on the other hand, a blurry 
 or very distinctive image could be embedded far from all of them. So, an image can get a high score with its own caption because it's the 
-kind of image the judge would rate highly *in general*.  From one number, there's no way to tell the two apart.
+kind of image the judge would rate highly *in general*.  Using only this number, there's no way to why the image ranked the way it did.
 
 To mitigate this, I added a control. For each image, I also scored it against the *wrong* captions, the ones belonging to other images, and 
 reported the difference between the correct-caption score and the average incorrect-caption score. The incorrect-caption score captures how 
-much the judge likes the image regardless of caption.
+much the judge prefers the image, regardless of caption.
 
 | judge | similarity to correct caption | to incorrect captions | margin |
 | --- | --- | --- | --- |
@@ -365,7 +365,7 @@ much the judge likes the image regardless of caption.
 | LAION B/32 | 0.2794 | 0.1458 | **0.1336** |
 
 ::fig{src="lit2img/fig-judge-control.svg"}
-The control makes the ranking flip. By raw score the OpenAI judge looks better; by margin over wrong captions the LAION judge is nearly 
+The control makes the ranking flip. By raw score, the OpenAI judge looks better; by margin over wrong captions, the LAION judge is nearly 
 twice as discriminating.
 ::
 
@@ -379,12 +379,12 @@ With these metrics, I could now measure whether a change to the model made the i
 plausibly objective way. The first thing I measured was [*guidance*](https://arxiv.org/abs/2207.12598), a setting that controls how strongly 
 the caption's influence is applied to the final image. During training, the caption is left out some of the time, so the model learns to 
 predict both with it and without it. At generation time, you take the difference between those two predictions and push the result further 
-in the caption's direction. The guidance scale is the multiplier on that difference. At a scale of 1 you use the captioned prediction 
-as is; at a scale of 5, you add the difference 5X over, so whatever the caption changed about the prediction is exaggerated by that 
+in the caption's direction. The guidance scale is the multiplier on that difference. At a scale of 1, you use the captioned prediction 
+as is; at a scale of 5, you add the difference 5X over. In other words, whatever the caption changed about the prediction is exaggerated by that 
 multiplier. A larger value here, and the images follow their captions more closely, but may start to look less natural.
 
 I had set the scale to 2 initially, for the small class-label experiments. Going from 2 to 5 improved both the image quality score and the 
-caption-adherence score at once. One of the nice things about guidance is that it's applied at generation time, so no re-training was 
+caption-adherence score. One of the nice things about guidance is that it's applied at generation time, so no re-training was 
 necessary to experiment with different values.
 
 | scale | FID | caption retrieval (R@1) | margin |
@@ -393,16 +393,15 @@ necessary to experiment with different values.
 | **5** | **46.49** | 0.321 | 0.1630 |
 | 8 | 47.14 | **0.364** | **0.1674** |
 
-A note on the judge: the retrieval and margin columns above come from the LAION judge. Both judges in the earlier table are CLIP models 
-with the same architecture.
+The retrieval and margin columns above come from the LAION judge. Both judges in the earlier table are CLIP models with the same architecture.
 
-In the end, these metrics are difficult to interpret, and somewhat subjective. Playing with the guidance and observing the 
-outputs with the eye, it's difficult to say what value produces "better" results, though the value does have a profound visual effect. I 
+In the end, these metrics are difficult to interpret, and the output is still subjective. Playing with the guidance and observing the 
+outputs with the eye, it's often difficult to say what value produces "better" results, though the value does have a profound visual effect. I 
 suspect this would become much more visually interesting and possibly interpretable for a diffusion model at much larger scale.
 
 ::fig{src="/images/lit2img/fig-guidance-sweep.jpg" alt="Three rows of five images. Each row is one prompt at guidance 1, 2, 5, 8 and 12; the images grow more defined and more contrasty from left to right, and the rightmost ones look harsh."}
 Three prompts at guidance 1, 2, 5, 8 and 12, each row starting from the same noise. At 1 the images are pale and loosely drawn; by 5 the 
-subject and the lighting the caption asked for are there; by 12 the contrast and saturation have run past anything in the training set.
+subject and the lighting often more closely match the caption; by 12, the contrast and saturation are turned up dramatically.
 ::
 
 ## Rendering books
@@ -412,14 +411,14 @@ interesting descriptions of varied scenes. Paragraphs of text make poor prompts 
 CLIP's text encoder truncates anything past 77 tokens. So, I used the same local Qwen model that wrote the training captions to write a 
 one-sentence scene summary of each paragraph, in the same register as those captions (a subject, a setting, the light, a mood), and used the 
 summary as the prompt. I decided to set the starting noise to be the same within each chapter, so images generated from the same chapter 
-share a similar starting composition, and the differences between them are determined strictly by the text.
+would share a similar starting structure, and the differences between them are determined strictly by the text.
 
 I've explored rendering a hundred paragraphs each from *Heart of Darkness*, *Moby Dick*, and *To the Lighthouse*. The whole run for a book 
 takes about five minutes on my laptop; most of that time is spent by the local LLM writing summaries. The hundred frames themselves take 
 under a minute. A few of the frames I found interesting are below.
 
-(Note: the sentence shown below each image is the local Qwen model's summary of a paragraph of the novel, as mentioned; it is not the 
-novel's text itself.)
+(**Note: the sentence shown below each image is the local Qwen model's summary of a paragraph of the novel, as mentioned; it is not the 
+novel's text itself.**
 
 ### Moby Dick
 
@@ -432,12 +431,12 @@ the local Qwen model. Starting noise is shared within a chapter.
 
 ::fig{src="/images/lit2img/fig-to-the-lighthouse-frames.jpg" alt="Six painterly frames: a beach with a figure, a green lawn, a dark sea at night, a dawn sky over water, a calm bay, and a figure looking out to sea, each with a caption."}
 Six frames from *To the Lighthouse*, across all three parts of the novel. As above, the text under each frame is the local model's summary 
-of the paragraph, used as the prompt, not Woolf's prose.
+of the paragraph, used as the prompt.
 ::
 
 ## A wide front end and a narrow back end
 
-Stepping back from the individual experiments, I think the bottleneck in this project is straightforward. The front end, CLIP, is 
+Stepping back from the individual experiments, I think the bottleneck in this project may be fairly straightforward. The front end, CLIP, is 
 general. It was trained on ~400 million captions covering photographs, product shots, screenshots, and everything else on the internet, 
 and it can describe nearly any sentence. The back end, the diffusion model, is very narrow in comparison. It has only ever seen 78,000 
 paintings (large enough to be interesting, but much smaller than the set of images used to train CLIP), described by a single locally-run 
@@ -459,10 +458,10 @@ Eight prompts written in a similar style to the training captions. The model pro
 Eight prompts from outside the training distribution, same seed and noise.
 ::
 
-I suspect the most straightforward approach for improving the model to produce "more realistic" output (though that wasn't my objective) is 
+I suspect the most direct approach for improving the model to produce "more realistic" output (though that wasn't my objective) is 
 to expose the image model to much more data. Stable Diffusion (v1) also keeps a frozen CLIP text encoder in front, a larger one 
-(ViT-L/14) than the ViT-B/32 used here, but the bigger difference is in the back end: its diffusion model was trained on LAION-2B-en, roughly 
-two billion image-caption pairs, and then further on filtered subsets of it. Perhaps there are other options (I have a note to learn about 
+(ViT-L/14) than the ViT-B/32 used here. However, the bigger difference is in the back end, as its diffusion model was trained on LAION-2B-en, 
+roughly two billion image-caption pairs, and then further on filtered subsets of it. Perhaps there are other options (I have a note to learn about 
 [unCLIP](https://creatis-myriad.github.io/2023/06/11/DALLE2.html)), but it seems intuitive that the ceiling on what the image model can 
 generate is set by what it has seen during training.
 
