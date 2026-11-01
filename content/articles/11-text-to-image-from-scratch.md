@@ -37,7 +37,7 @@ which covered a specific aspect of the architecture or training and serving proc
 
 Over the course of about a month, I spent several evenings a week writing and generating code for each module and reading papers about concepts 
 as they were introduced, based on examples provided by the LLM.  I found it useful to treat the code output of the frontier model like traditional 
-print material, and the prose surrounding the code as a conversation with the author about the topic or implementation. As the LLM  generated code 
+print material, and the prose surrounding the code as a conversation with the author about the topic or implementation. As the LLM generated code 
 implementing each part of the model in its output, I chose to transpose most of it manually, as I would if I were using a book. This preserved a 
 kind of slowness that I feel is important in learning.
 
@@ -49,7 +49,7 @@ A sample of 16 images generated from sentences describing a variety of different
 
 On the AI/ML side of things, I suspect the issues I encountered are obvious to folks who do this work professionally.
 However, a few takeaways from the project seem to generalize well beyond the purely technical learnings. This was the first 
-significant personal project in which I used a frontier model to act primarily as a "guide" through topics that were to me. 
+significant personal project in which I used a frontier model to act primarily as a "guide" through topics that were new to me. 
 
 - Using frontier models for learning a new subject, or deepening my understanding of an existing topic, can be valuable. However, I'm 
   still left with the feeling that I *don't know what I don't know*. I knew nothing about the mechanics of latent diffusion 
@@ -57,9 +57,9 @@ significant personal project in which I used a frontier model to act primarily a
   ([DiT](https://arxiv.org/abs/2212.09748)), or [Classifier-Free Guidance](https://arxiv.org/abs/2207.12598) prior to starting this 
   project.  From that perspective, it was a great experience working with the LLM to build a structured learning path through the relevant 
   technology while building. As I worked, I produced a running HTML artifact that provided definitions of useful terms and ideas. This
-  allowed me to preserve a kind of dynamic study guide that I could read while *not producing code* that I feel helped improve my understanding 
-  over time. However, with previous experience only on the text side of the model, I wonder how long would it have taken me to piece together the necessary 
-  knowledge to construct and sufficiently understand the ideas behind this model without a structured guide?  Are there important technical 
+  preserved a kind of dynamic study guide that I could read while *not producing code*, which I feel improved my understanding 
+  over time. However, with previous experience only on the text side of the model, I wonder how long it would have taken me to piece together the necessary 
+  knowledge to construct and sufficiently understand the ideas behind this model without a structured guide.  Are there important technical 
   mistakes or oversights that I made along the way?  I still don't really know, because I relied on my own interaction with a frontier model 
   to serve as a guide for my learning. It's possible that more exploratory prompting could've helped uncover more unknowns. It still seems 
   that using LLMs as learning companions unlocks a massive potential for self-learners. However, I'm not sure that it entirely replaces reading 
@@ -68,13 +68,13 @@ significant personal project in which I used a frontier model to act primarily a
   occupy a much murkier area, a hybrid of learning and *the rapid production of a completed result*. Even when that completed result is learning 
   "material," it's now far too easy to slip out of self-directed learning and into "build mode." I'm very curious to learn how other folks use 
   frontier models as learning companions. I'm a believer in "building to learn," but, without care, this path feels more like "watch it get built to learn," 
-  which is, in my opinion, an illusory form of learning. I don't become a much better pole vaulter by watching an olympic athlete compete; I need 
+  which is, in my opinion, an illusory form of learning. I don't become a much better pole vaulter by watching an Olympic athlete compete; I need 
   some adequate combination of watching and doing to develop skillfully.
-- **I feel a kind of attenuation in my capacity to sit with a problem**, I've often felt my capacity to learn is really just a well-developed 
+- **I feel a kind of attenuation in my capacity to sit with a problem.** I've often felt my capacity to learn is really just a well-developed 
   tolerance for "being stuck for long periods of time with a lack of understanding."  From now on, there is always a trade-off; ask the 
-  LLM and get un-stuck, as it pertains to your next output objective, or stay stuck for longer periods of time in relative ignorance to exercise your 
+  LLM and get un-stuck, as it pertains to your next output objective, or stay stuck for longer periods of time in relative ignorance in order to exercise your 
   capacity to learn. **I believe deep human learning will continue to require direct effort in training one's capacity to sit with not-knowing, 
-  and often taking the winding path to solving problems "manually" that emerges.** I think that there is immeasurable value in walking these winding paths, 
+  and often in taking the winding path that emerges when solving problems "manually."** I think that there is immeasurable value in walking these winding paths, 
   literally to *experience* acts of learning. I should write more about that sometime.
 - On the ML side of things, it's important to remember that there is generally a loss floor. It took me a while to understand why 
   the loss could reach some asymptotic value while the images produced by the model continued to get "better." A large part of the loss is 
@@ -85,7 +85,7 @@ significant personal project in which I used a frontier model to act primarily a
   good it can possibly be. Once information has been lost, no change in the model can recover it.
 
 
-With those takeways in mind, what follows is a summary of the project itself.
+With those takeaways in mind, what follows is a summary of the project itself.
 
 ## Breaking the project down into two problems
 
