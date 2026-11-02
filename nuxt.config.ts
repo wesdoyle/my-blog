@@ -20,6 +20,11 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    // Links already shared under the old file name.
+    '/articles/11-text-to-image-from-scratch': { redirect: { to: '/articles/lit2img-review', statusCode: 301 } }
+  },
+
   nitro: {
     preset: 'aws-amplify',
     // Amplify sends page routes to the server; bundle the prerendered HTML so it serves
