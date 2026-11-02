@@ -1,8 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-12',
 
-  ssr: false,
-
   modules: ['@nuxt/content'],
 
   app: {
@@ -16,8 +14,19 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://wesdoyle.net'
+    }
+  },
+
   nitro: {
-    preset: 'aws-amplify'
+    preset: 'aws-amplify',
+    // Render each page to HTML at build time, so link previews see its meta tags.
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
   },
 
   content: {

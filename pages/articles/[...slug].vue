@@ -14,6 +14,17 @@ if (!article.value) {
 
 useHead({ title: computed(() => `${article.value?.title ?? 'Post'} · Wes Doyle`) })
 
+const { siteUrl } = useRuntimeConfig().public
+useSeoMeta({
+  description: () => article.value?.description,
+  ogType: 'article',
+  ogTitle: () => article.value?.title,
+  ogDescription: () => article.value?.description,
+  ogUrl: () => siteUrl + route.path,
+  ogImage: () => (article.value?.image ? siteUrl + article.value.image : undefined),
+  twitterCard: () => (article.value?.image ? 'summary_large_image' : 'summary')
+})
+
 const { data: posts } = await usePosts()
 const { data: books } = await useBooks()
 

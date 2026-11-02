@@ -2,6 +2,7 @@
 title: "What I learned building a small text-to-image model"
 description: "Revisiting building for the sake of learning, and current thoughts on frontier models as learning guides"
 date: 2026-10-26
+image: /images/lit2img/og.jpg
 tags:
 - ai
 - ml
