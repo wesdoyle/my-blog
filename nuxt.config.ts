@@ -22,9 +22,9 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'aws-amplify',
-    // Match the Node 22 build: Nuxt Content picks node:sqlite, which Node 20 lacks.
-    // Amplify accepts nodejs22.x; Nitro's type has not caught up.
-    awsAmplify: { runtime: 'nodejs22.x' as 'nodejs20.x' },
+    // Amplify sends page routes to the server; bundle the prerendered HTML so it serves
+    // those files instead of querying the content database at request time.
+    serveStatic: 'inline',
     // Render each page to HTML at build time, so link previews see its meta tags.
     prerender: {
       crawlLinks: true,
