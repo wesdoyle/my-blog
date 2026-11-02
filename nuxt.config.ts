@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     // Render each page to HTML at build time, so link previews see its meta tags.
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/', '/404.html']
     }
   },
 
